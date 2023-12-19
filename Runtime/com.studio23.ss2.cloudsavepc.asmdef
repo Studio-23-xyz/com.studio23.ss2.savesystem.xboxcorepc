@@ -1,0 +1,18 @@
+{
+    "name": "com.studio23.ss2.cloudsavepc",
+    "rootNamespace": "",
+    "references": [
+        "GUID:661a6088aa5ffcf459b89da5f0fadcb1",
+        "GUID:fa11062f96de91b409f6d85fa6d2d5c7",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
