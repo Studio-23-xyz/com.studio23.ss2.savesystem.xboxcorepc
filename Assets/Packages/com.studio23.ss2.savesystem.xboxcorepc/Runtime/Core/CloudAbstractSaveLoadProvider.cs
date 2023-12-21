@@ -16,7 +16,7 @@ namespace Studio23.SS2.SaveSystem.XboxCorePc.Core
         {
             if (!File.Exists(filePath))
             {
-               Debug.LogError($" File path is not valid!");
+               Debug.LogError($" File path is not found!");
                return;
             }
             var playerSaveData = File.ReadAllBytes(filePath);
