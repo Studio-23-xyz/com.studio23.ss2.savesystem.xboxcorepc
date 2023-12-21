@@ -15,7 +15,7 @@ namespace Studio23.SS2.SaveSystem.XboxCorePc.Core
     /// You should fire OnUploadSuccess in the implementation.
     /// </summary>
     /// <param name="filepath"></param>
-    public abstract void UploadToCloud(string filepath);
+    public abstract void UploadToCloud( string filepath);
 
     /// <summary>
     /// You should fire OnDownloadSuccess in the implementation
