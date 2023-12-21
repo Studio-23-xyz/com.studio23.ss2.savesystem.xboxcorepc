@@ -2,7 +2,7 @@
   "name": "com.studio23.ss2.savesystem.xboxcorepc",
   "version": "0.0.1",
   "displayName": " SaveSystem.XboxCorePc",
-  "description": "This package is for saving data in xbox core pc game",
+  "description": "This package is for saving data in xbox core pc",
   "unity": "2022.3",
   "unityRelease": "14f1",
   "documentationUrl": "https://openupm.com/packages/com.studio23.ss2.cloudsavepc",

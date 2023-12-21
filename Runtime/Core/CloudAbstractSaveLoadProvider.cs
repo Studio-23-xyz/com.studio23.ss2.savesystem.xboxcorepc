@@ -28,11 +28,10 @@ namespace Studio23.SS2.SaveSystem.XboxCorePc.Core
                 MSGdk.Helpers.Save(memoryStream.ToArray());
                 memoryStream.Close();
                 Debug.Log($"Game data uploaded!");
-              //  OnUploadSuccess.Invoke();
+                OnUploadSuccess?.Invoke();
             }
             
         }
-
         public override void DownloadFromCloud(string filePath)
         {
             _filePath = filePath;
@@ -45,16 +44,27 @@ namespace Studio23.SS2.SaveSystem.XboxCorePc.Core
 
         private void OnGameSaveLoaded(object sender, GameSaveLoadedArgs saveData)
         {
-            BinaryFormatter binaryFormatter = new BinaryFormatter();
-            using (MemoryStream memoryStream = new MemoryStream(saveData.Data))
+            if (saveData.Data.Length == 0  ||  saveData.Data == Array.Empty<byte>())
             {
-                byte[] playerSaveData = (byte[])binaryFormatter.Deserialize(memoryStream);
-                
-                File.WriteAllBytes(_filePath, playerSaveData);
-                memoryStream.Close();
-                Debug.Log($"Game data downloaded and saved to {_filePath}");
-              //  OnDownloadSuccess.Invoke();
+                Debug.Log($"Game data empty or null {_filePath}");
+                OnDownloadSuccess?.Invoke();
             }
+            else
+            {
+                BinaryFormatter binaryFormatter = new BinaryFormatter();
+                using (MemoryStream memoryStream = new MemoryStream(saveData.Data))
+                {
+                    byte[] playerSaveData = (byte[])binaryFormatter.Deserialize(memoryStream);
+                
+                    File.WriteAllBytes(_filePath, playerSaveData);
+                    memoryStream.Close();
+                
+                    Debug.Log($"Game data downloaded and saved to {_filePath}");
+                    OnDownloadSuccess?.Invoke();
+                }
+            }
+            
+           
         }
     }
 }
