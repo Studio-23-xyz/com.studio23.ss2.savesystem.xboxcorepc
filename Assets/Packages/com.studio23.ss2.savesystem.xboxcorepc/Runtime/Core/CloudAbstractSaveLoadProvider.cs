@@ -9,78 +9,62 @@ namespace Studio23.SS2.SaveSystem.XboxCorePc.Core
 {
    
     
-    [CreateAssetMenu(fileName = "Save-Load Provider", menuName = "Studio-23/Save-Load Provider", order = 1)]
+    [CreateAssetMenu(fileName = "XboxCorePcSaveLoadProvider", menuName = "Studio-23/Save System/XboxCorePc SaveLoad Provider", order = 1)]
     public class CloudAbstractSaveLoadProvider : AbstractSaveLoadProvider
     {
-        
-       
-        public string output;
-        private PlayerSaveData playerSaveData;
-      
-        public override void UploadToCloud(string key, string filepath)
+        public override void UploadToCloud(string filePath)
         {
-            playerSaveData = new PlayerSaveData();
-            playerSaveData.name = "Jane Doe";
-            playerSaveData.level = 2;
-            /*string path = Path.Combine(Application.persistentDataPath, "savedata.text");
-            if (!File.Exists(path))
+            if (!File.Exists(filePath))
             {
-                File.Create(path).Close();
-            }*/
+               Debug.LogError($" File path is not valid!");
+               return;
+            }
+            var playerSaveData = File.ReadAllBytes(filePath);
             
             BinaryFormatter binaryFormatter = new BinaryFormatter();
             using (MemoryStream memoryStream = new MemoryStream())
             {
                 binaryFormatter.Serialize(memoryStream, playerSaveData);
                 MSGdk.Helpers.Save(memoryStream.ToArray());
-               
-                output = "\n Saved game data:" +
-                         "\n Name: " + playerSaveData.name +
-                         "\n Level: " + playerSaveData.level;
-                
-                /*
-                using (FileStream fileStream = File.Open(path, FileMode.OpenOrCreate))
-                {
-                    binaryFormatter.Serialize(fileStream, playerSaveData);
-                }*/
+                memoryStream.Close();
+                Debug.Log($"Game data uploaded!");
+                OnUploadSuccess?.Invoke();
             }
+            
         }
-
-        public override void DownloadFromCloud(string key, string downloadLocation)
+        public override void DownloadFromCloud(string filePath)
         {
+            _filePath = filePath;
             MSGdk.Helpers.OnGameSaveLoaded -= OnGameSaveLoaded;
             MSGdk.Helpers.OnGameSaveLoaded += OnGameSaveLoaded;
             MSGdk.Helpers.LoadSaveData();
         }
-        
-       
+
+        private string _filePath;
 
         private void OnGameSaveLoaded(object sender, GameSaveLoadedArgs saveData)
         {
-            BinaryFormatter binaryFormatter = new BinaryFormatter();
-            using (MemoryStream memoryStream = new MemoryStream(saveData.Data))
+            if (saveData.Data.Length == 0  ||  saveData.Data == Array.Empty<byte>())
             {
-                object playerSaveDataObj = binaryFormatter.Deserialize(memoryStream);
-                playerSaveData = playerSaveDataObj as PlayerSaveData;
-                
-                output = "\n Loaded save game:" +
-                              "\n Name: " + playerSaveData.name +
-                              "\n Level: " + playerSaveData.level;
-                
-                string path = Path.Combine(Application.persistentDataPath, "savedata.text");
-                if (!File.Exists(path))
+                Debug.Log($"Game data empty or null {_filePath}");
+                OnDownloadSuccess?.Invoke();
+            }
+            else
+            {
+                BinaryFormatter binaryFormatter = new BinaryFormatter();
+                using (MemoryStream memoryStream = new MemoryStream(saveData.Data))
                 {
-                    File.Create(path).Close();
-                }
-                using (FileStream fileStream = File.Open(path, FileMode.OpenOrCreate))
-                {
-                    binaryFormatter.Serialize(fileStream, playerSaveData);
-                }
+                    byte[] playerSaveData = (byte[])binaryFormatter.Deserialize(memoryStream);
                 
+                    File.WriteAllBytes(_filePath, playerSaveData);
+                    memoryStream.Close();
+                
+                    Debug.Log($"Game data downloaded and saved to {_filePath}");
+                    OnDownloadSuccess?.Invoke();
+                }
             }
             
-          
-            
+           
         }
     }
 }
