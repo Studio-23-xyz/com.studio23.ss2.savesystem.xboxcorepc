@@ -1,6 +1,6 @@
 {
   "name": "com.studio23.ss2.savesystem.xboxcorepc",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "displayName": " SaveSystem.XboxCorePc",
   "description": "This package is for saving data in xbox core pc",
   "unity": "2022.3",
@@ -18,15 +18,15 @@
     }
   ],
   "dependencies": {
-    "com.studio23.ss2.authsystem.xboxcorepc": "0.0.4",
-	"com.studio23.ss2.cloudsave": "0.0.1"
+    "com.studio23.ss2.authsystem.xboxcorepc": "0.0.8",
+	"com.studio23.ss2.cloudsave": "0.0.2"
   },
   "keywords": [
     "xbox ",
     "cloudsave"
   ],
   "author": {
-    "name": "Studio 23",
+    "name": "Studio23",
     "email": "contact@studio-23.xyz",
     "url": "https://studio-23.xyz"
   }
