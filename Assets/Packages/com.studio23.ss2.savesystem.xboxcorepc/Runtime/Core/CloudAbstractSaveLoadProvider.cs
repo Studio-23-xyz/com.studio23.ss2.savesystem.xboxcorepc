@@ -1,70 +1,96 @@
 using System;
 using System.IO;
-using System.Runtime.Serialization.Formatters.Binary;
+using System.Text;
 using Studio23.SS2.Authsystem.XboxCorePC.Core;
+using Studio23.SS2.CloudSave.Core;
 using UnityEngine;
-
+ 
  
 namespace Studio23.SS2.SaveSystem.XboxCorePc.Core
 {
    
-    
-    [CreateAssetMenu(fileName = "XboxCorePcSaveLoadProvider", menuName = "Studio-23/Save System/XboxCorePc SaveLoad Provider", order = 1)]
-    public class CloudAbstractSaveLoadProvider : AbstractSaveLoadProvider
+
+   
+
+    [CreateAssetMenu(fileName = "XboxCorePcSaveLoadProvider",
+        menuName = "Studio-23/Save System/XboxCorePc SaveLoad Provider", order = 1)]
+    [Serializable]
+    public class Employee
     {
-        public override void UploadToCloud(string filePath)
-        {
-            if (!File.Exists(filePath))
-            {
-               Debug.LogError($" File path is not found!");
-               return;
-            }
-            var playerSaveData = File.ReadAllBytes(filePath);
-            
-            BinaryFormatter binaryFormatter = new BinaryFormatter();
-            using (MemoryStream memoryStream = new MemoryStream())
-            {
-                binaryFormatter.Serialize(memoryStream, playerSaveData);
-                MSGdk.Helpers.Save(memoryStream.ToArray());
-                memoryStream.Close();
-                Debug.Log($"Game data uploaded!");
-                OnUploadSuccess?.Invoke();
-            }
-            
-        }
-        public override void DownloadFromCloud(string filePath)
-        {
-            _filePath = filePath;
-            MSGdk.Helpers.OnGameSaveLoaded -= OnGameSaveLoaded;
-            MSGdk.Helpers.OnGameSaveLoaded += OnGameSaveLoaded;
-            MSGdk.Helpers.LoadSaveData();
-        }
+        public string Name;
+        public int Age;
+    }
+    public class CloudAbstractSaveLoadProvider : AbstractCloudSaveProvider
+    {
+       
 
         private string _filePath;
 
-        private void OnGameSaveLoaded(object sender, GameSaveLoadedArgs saveData)
+       
+
+        public override void InitializePlatformService()
         {
-            if (saveData.Data.Length == 0  ||  saveData.Data == Array.Empty<byte>())
+            /* Automatically call after sign in*/
+          // MSGdk.Helpers.InitializeGameSaves();
+        }
+
+      
+        public override void UploadToCloud(string key, string filepath)
+        {
+
+            if (!File.Exists(filepath))
             {
-                Debug.Log($"Game data empty or null {_filePath}");
-                OnDownloadSuccess?.Invoke();
+                Debug.LogError($" File path is not found!");
+                return;
+            }
+ 
+            var readAllBytes = File.ReadAllBytes(filepath);
+            if (readAllBytes.Length > 0)
+            {
+                MSGdk.Helpers.Save(key, readAllBytes);  
+                Debug.Log($"Game data uploaded! {Encoding.UTF8.GetString(readAllBytes)}");
+                OnUploadSuccess?.Invoke();
             }
             else
             {
-                BinaryFormatter binaryFormatter = new BinaryFormatter();
-                using (MemoryStream memoryStream = new MemoryStream(saveData.Data))
+                Debug.LogError("Error reading file: Not all bytes were read.");
+            }
+
+             
+        }
+
+        public override void DownloadFromCloud(string key, string downloadLocation)
+        {
+            
+            _filePath = downloadLocation;
+            MSGdk.Helpers.OnGameSaveLoaded -= OnGameSaveLoaded;
+            MSGdk.Helpers.OnGameSaveLoaded += OnGameSaveLoaded;
+            MSGdk.Helpers.LoadSaveData(key);
+        }
+        
+        
+        private void OnGameSaveLoaded(object sender, GameSaveLoadedArgs saveData)
+        {
+            
+            if (saveData.Data == null || saveData.Data.Length == 0)
+            {
+                if (File.Exists(_filePath))
                 {
-                    byte[] playerSaveData = (byte[])binaryFormatter.Deserialize(memoryStream);
-                
-                    File.WriteAllBytes(_filePath, playerSaveData);
-                    memoryStream.Close();
-                
-                    Debug.Log($"Game data downloaded and saved to {_filePath}");
-                    OnDownloadSuccess?.Invoke();
+                    File.Delete(_filePath);
+                    Debug.LogError($"Old saved deleted");
                 }
+                Debug.Log($"Online data is null or 0. Do nothing.");
+                OnDownloadSuccess?.Invoke();
+            }
+            else if( saveData.Data.Length > 0)
+            {
+                
+                File.WriteAllBytes(_filePath, saveData.Data); // Write the JSON string to the file
+                Debug.Log($"Downloaded from online: Successful, Saved to {Encoding.UTF8.GetString(saveData.Data)}");
+                OnDownloadSuccess?.Invoke();
             }
             
-           
         }
+        
     }
 }
