@@ -1,0 +1,718 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class GameSaveManager
+ |  |  </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class GameSaveManager
+ |  |  ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      <meta name="docfx:disablenewtab" content="true">
+      
+      <meta name="docfx:docurl" content="https://github.com/Studio-23-xyz/com.studio23.ss2.savesystem.xboxcorepc/new/main/apiSpec/new?filename=GameSave_GameSaveManager.md&amp;value=---%0Auid%3A%20GameSave.GameSaveManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="GameSave.GameSaveManager">
+
+
+
+  <h1 id="GameSave_GameSaveManager" data-uid="GameSave.GameSaveManager" class="text-break">
+    Class GameSaveManager
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.savesystem.xboxcorepc/blob/main/Assets/Packages/com.studio23.ss2.savesystem.xboxcorepc/Runtime/Core/GameSaveManager.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="GameSave.html">GameSave</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class GameSaveManager</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">GameSaveManager</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="GameSave_GameSaveManager_CloseGameSaveHandles_" data-uid="GameSave.GameSaveManager.CloseGameSaveHandles*"></a>
+
+  <h3 id="GameSave_GameSaveManager_CloseGameSaveHandles" data-uid="GameSave.GameSaveManager.CloseGameSaveHandles">
+  CloseGameSaveHandles()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.savesystem.xboxcorepc/blob/main/Assets/Packages/com.studio23.ss2.savesystem.xboxcorepc/Runtime/Core/GameSaveManager.cs/#L269"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CloseGameSaveHandles()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GameSave_GameSaveManager_DeleteContainer_" data-uid="GameSave.GameSaveManager.DeleteContainer*"></a>
+
+  <h3 id="GameSave_GameSaveManager_DeleteContainer_System_String_UnityAction_System_Int32__" data-uid="GameSave.GameSaveManager.DeleteContainer(System.String,UnityAction{System.Int32})">
+  DeleteContainer(string, UnityAction&lt;int&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.savesystem.xboxcorepc/blob/main/Assets/Packages/com.studio23.ss2.savesystem.xboxcorepc/Runtime/Core/GameSaveManager.cs/#L263"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteContainer(string containerName, UnityAction&lt;int&gt; onDeleteContainercomplete)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>containerName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>onDeleteContainercomplete</code> <span class="xref">UnityAction</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GameSave_GameSaveManager_GetOrCreateContainer_" data-uid="GameSave.GameSaveManager.GetOrCreateContainer*"></a>
+
+  <h3 id="GameSave_GameSaveManager_GetOrCreateContainer_System_String_UnityAction_System_Int32__" data-uid="GameSave.GameSaveManager.GetOrCreateContainer(System.String,UnityAction{System.Int32})">
+  GetOrCreateContainer(string, UnityAction&lt;int&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.savesystem.xboxcorepc/blob/main/Assets/Packages/com.studio23.ss2.savesystem.xboxcorepc/Runtime/Core/GameSaveManager.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetOrCreateContainer(string containerName, UnityAction&lt;int&gt; onContainerCreated)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>containerName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>onContainerCreated</code> <span class="xref">UnityAction</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GameSave_GameSaveManager_Initialize_" data-uid="GameSave.GameSaveManager.Initialize*"></a>
+
+  <h3 id="GameSave_GameSaveManager_Initialize_XGamingRuntime_XUserHandle_System_String_System_Boolean_UnityAction_System_Int32__" data-uid="GameSave.GameSaveManager.Initialize(XGamingRuntime.XUserHandle,System.String,System.Boolean,UnityAction{System.Int32})">
+  Initialize(XUserHandle, string, bool, UnityAction&lt;int&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.savesystem.xboxcorepc/blob/main/Assets/Packages/com.studio23.ss2.savesystem.xboxcorepc/Runtime/Core/GameSaveManager.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Initialize(XUserHandle userHandle, string scid, bool syncOnDemand, UnityAction&lt;int&gt; onInitializationComplete)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>userHandle</code> <a class="xref" href="XGamingRuntime.XUserHandle.html">XUserHandle</a></dt>
+    <dd></dd>
+    <dt><code>scid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>syncOnDemand</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>onInitializationComplete</code> <span class="xref">UnityAction</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GameSave_GameSaveManager_LoadGame_" data-uid="GameSave.GameSaveManager.LoadGame*"></a>
+
+  <h3 id="GameSave_GameSaveManager_LoadGame_System_String_UnityAction_System_Int32_XGamingRuntime_XGameSaveBlob____" data-uid="GameSave.GameSaveManager.LoadGame(System.String,UnityAction{System.Int32,XGamingRuntime.XGameSaveBlob[]})">
+  LoadGame(string, UnityAction&lt;int, XGameSaveBlob[]&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.savesystem.xboxcorepc/blob/main/Assets/Packages/com.studio23.ss2.savesystem.xboxcorepc/Runtime/Core/GameSaveManager.cs/#L150"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadGame(string blobBufferName, UnityAction&lt;int, XGameSaveBlob[]&gt; onLoadGameCompleted)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>blobBufferName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>onLoadGameCompleted</code> <span class="xref">UnityAction</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="XGamingRuntime.XGameSaveBlob.html">XGameSaveBlob</a>[]&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GameSave_GameSaveManager_LoadGame_" data-uid="GameSave.GameSaveManager.LoadGame*"></a>
+
+  <h3 id="GameSave_GameSaveManager_LoadGame_System_String___UnityAction_System_Int32_XGamingRuntime_XGameSaveBlob____" data-uid="GameSave.GameSaveManager.LoadGame(System.String[],UnityAction{System.Int32,XGamingRuntime.XGameSaveBlob[]})">
+  LoadGame(string[], UnityAction&lt;int, XGameSaveBlob[]&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.savesystem.xboxcorepc/blob/main/Assets/Packages/com.studio23.ss2.savesystem.xboxcorepc/Runtime/Core/GameSaveManager.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadGame(string[] blobBufferNames, UnityAction&lt;int, XGameSaveBlob[]&gt; onLoadGameCompleted)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>blobBufferNames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+    <dt><code>onLoadGameCompleted</code> <span class="xref">UnityAction</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="XGamingRuntime.XGameSaveBlob.html">XGameSaveBlob</a>[]&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GameSave_GameSaveManager_QueryContainerBlobs_" data-uid="GameSave.GameSaveManager.QueryContainerBlobs*"></a>
+
+  <h3 id="GameSave_GameSaveManager_QueryContainerBlobs" data-uid="GameSave.GameSaveManager.QueryContainerBlobs">
+  QueryContainerBlobs()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.savesystem.xboxcorepc/blob/main/Assets/Packages/com.studio23.ss2.savesystem.xboxcorepc/Runtime/Core/GameSaveManager.cs/#L227"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XGameSaveBlobInfo[] QueryContainerBlobs()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XGamingRuntime.XGameSaveBlobInfo.html">XGameSaveBlobInfo</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GameSave_GameSaveManager_QueryContainerBlobs_" data-uid="GameSave.GameSaveManager.QueryContainerBlobs*"></a>
+
+  <h3 id="GameSave_GameSaveManager_QueryContainerBlobs_System_String_" data-uid="GameSave.GameSaveManager.QueryContainerBlobs(System.String)">
+  QueryContainerBlobs(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.savesystem.xboxcorepc/blob/main/Assets/Packages/com.studio23.ss2.savesystem.xboxcorepc/Runtime/Core/GameSaveManager.cs/#L245"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XGameSaveBlobInfo[] QueryContainerBlobs(string blobPrefix)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>blobPrefix</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XGamingRuntime.XGameSaveBlobInfo.html">XGameSaveBlobInfo</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GameSave_GameSaveManager_QueryContainers_" data-uid="GameSave.GameSaveManager.QueryContainers*"></a>
+
+  <h3 id="GameSave_GameSaveManager_QueryContainers" data-uid="GameSave.GameSaveManager.QueryContainers">
+  QueryContainers()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.savesystem.xboxcorepc/blob/main/Assets/Packages/com.studio23.ss2.savesystem.xboxcorepc/Runtime/Core/GameSaveManager.cs/#L191"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XGameSaveContainerInfo[] QueryContainers()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XGamingRuntime.XGameSaveContainerInfo.html">XGameSaveContainerInfo</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GameSave_GameSaveManager_QueryContainers_" data-uid="GameSave.GameSaveManager.QueryContainers*"></a>
+
+  <h3 id="GameSave_GameSaveManager_QueryContainers_System_String_" data-uid="GameSave.GameSaveManager.QueryContainers(System.String)">
+  QueryContainers(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.savesystem.xboxcorepc/blob/main/Assets/Packages/com.studio23.ss2.savesystem.xboxcorepc/Runtime/Core/GameSaveManager.cs/#L209"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XGameSaveContainerInfo[] QueryContainers(string containerPrefix)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>containerPrefix</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="XGamingRuntime.XGameSaveContainerInfo.html">XGameSaveContainerInfo</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GameSave_GameSaveManager_QuerySpaceQuota_" data-uid="GameSave.GameSaveManager.QuerySpaceQuota*"></a>
+
+  <h3 id="GameSave_GameSaveManager_QuerySpaceQuota_UnityAction_System_Int32_System_Int64__" data-uid="GameSave.GameSaveManager.QuerySpaceQuota(UnityAction{System.Int32,System.Int64})">
+  QuerySpaceQuota(UnityAction&lt;int, long&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.savesystem.xboxcorepc/blob/main/Assets/Packages/com.studio23.ss2.savesystem.xboxcorepc/Runtime/Core/GameSaveManager.cs/#L185"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void QuerySpaceQuota(UnityAction&lt;int, long&gt; onSpaceQuotaRequested)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>onSpaceQuotaRequested</code> <span class="xref">UnityAction</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GameSave_GameSaveManager_SaveGame_" data-uid="GameSave.GameSaveManager.SaveGame*"></a>
+
+  <h3 id="GameSave_GameSaveManager_SaveGame_System_String_System_String_System_Byte___UnityAction_System_Int32__" data-uid="GameSave.GameSaveManager.SaveGame(System.String,System.String,System.Byte[],UnityAction{System.Int32})">
+  SaveGame(string, string, byte[], UnityAction&lt;int&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.savesystem.xboxcorepc/blob/main/Assets/Packages/com.studio23.ss2.savesystem.xboxcorepc/Runtime/Core/GameSaveManager.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveGame(string displayName, string blobBufferName, byte[] blobData, UnityAction&lt;int&gt; onSaveGameCompleted)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>displayName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>blobBufferName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>blobData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>onSaveGameCompleted</code> <span class="xref">UnityAction</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GameSave_GameSaveManager_SaveGame_" data-uid="GameSave.GameSaveManager.SaveGame*"></a>
+
+  <h3 id="GameSave_GameSaveManager_SaveGame_System_String_System_String___System_Collections_Generic_List_System_Byte____UnityAction_System_Int32__" data-uid="GameSave.GameSaveManager.SaveGame(System.String,System.String[],System.Collections.Generic.List{System.Byte[]},UnityAction{System.Int32})">
+  SaveGame(string, string[], List&lt;byte[]&gt;, UnityAction&lt;int&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.savesystem.xboxcorepc/blob/main/Assets/Packages/com.studio23.ss2.savesystem.xboxcorepc/Runtime/Core/GameSaveManager.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveGame(string displayName, string[] blobBufferNames, List&lt;byte[]&gt; blobDataList, UnityAction&lt;int&gt; onSaveGameCompleted)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>displayName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>blobBufferNames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+    <dt><code>blobDataList</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]&gt;</dt>
+    <dd></dd>
+    <dt><code>onSaveGameCompleted</code> <span class="xref">UnityAction</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GameSave_GameSaveManager_StartContainerUpdate_" data-uid="GameSave.GameSaveManager.StartContainerUpdate*"></a>
+
+  <h3 id="GameSave_GameSaveManager_StartContainerUpdate_System_String_" data-uid="GameSave.GameSaveManager.StartContainerUpdate(System.String)">
+  StartContainerUpdate(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.savesystem.xboxcorepc/blob/main/Assets/Packages/com.studio23.ss2.savesystem.xboxcorepc/Runtime/Core/GameSaveManager.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int StartContainerUpdate(string containerDisplayName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>containerDisplayName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GameSave_GameSaveManager_SubmitDataBlobToWrite_" data-uid="GameSave.GameSaveManager.SubmitDataBlobToWrite*"></a>
+
+  <h3 id="GameSave_GameSaveManager_SubmitDataBlobToWrite_System_String_System_Byte___" data-uid="GameSave.GameSaveManager.SubmitDataBlobToWrite(System.String,System.Byte[])">
+  SubmitDataBlobToWrite(string, byte[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.savesystem.xboxcorepc/blob/main/Assets/Packages/com.studio23.ss2.savesystem.xboxcorepc/Runtime/Core/GameSaveManager.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SubmitDataBlobToWrite(string blobName, byte[] data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>blobName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="GameSave_GameSaveManager_SubmitGameSaveUpdate_" data-uid="GameSave.GameSaveManager.SubmitGameSaveUpdate*"></a>
+
+  <h3 id="GameSave_GameSaveManager_SubmitGameSaveUpdate_UnityAction_System_Int32__" data-uid="GameSave.GameSaveManager.SubmitGameSaveUpdate(UnityAction{System.Int32})">
+  SubmitGameSaveUpdate(UnityAction&lt;int&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.savesystem.xboxcorepc/blob/main/Assets/Packages/com.studio23.ss2.savesystem.xboxcorepc/Runtime/Core/GameSaveManager.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SubmitGameSaveUpdate(UnityAction&lt;int&gt; onSubmitGameSaveComplete)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>onSubmitGameSaveComplete</code> <span class="xref">UnityAction</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made by <a href="https://github.com/Studio-23-xyz" target="_blank">Studio-23-xyz</a> using <a href="https://dotnet.github.io/docfx" target="_blank">DocFX</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

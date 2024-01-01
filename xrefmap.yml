@@ -1,6 +1,237 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: GameSave
+  name: GameSave
+  href: api/GameSave.html
+  commentId: N:GameSave
+  fullName: GameSave
+  nameWithType: GameSave
+- uid: GameSave.GameSaveManager
+  name: GameSaveManager
+  href: api/GameSave.GameSaveManager.html
+  commentId: T:GameSave.GameSaveManager
+  fullName: GameSave.GameSaveManager
+  nameWithType: GameSaveManager
+- uid: GameSave.GameSaveManager.CloseGameSaveHandles
+  name: CloseGameSaveHandles()
+  href: api/GameSave.GameSaveManager.html#GameSave_GameSaveManager_CloseGameSaveHandles
+  commentId: M:GameSave.GameSaveManager.CloseGameSaveHandles
+  fullName: GameSave.GameSaveManager.CloseGameSaveHandles()
+  nameWithType: GameSaveManager.CloseGameSaveHandles()
+- uid: GameSave.GameSaveManager.CloseGameSaveHandles*
+  name: CloseGameSaveHandles
+  href: api/GameSave.GameSaveManager.html#GameSave_GameSaveManager_CloseGameSaveHandles_
+  commentId: Overload:GameSave.GameSaveManager.CloseGameSaveHandles
+  isSpec: "True"
+  fullName: GameSave.GameSaveManager.CloseGameSaveHandles
+  nameWithType: GameSaveManager.CloseGameSaveHandles
+- uid: GameSave.GameSaveManager.DeleteContainer(System.String,UnityAction{System.Int32})
+  name: DeleteContainer(string, UnityAction<int>)
+  href: api/GameSave.GameSaveManager.html#GameSave_GameSaveManager_DeleteContainer_System_String_UnityAction_System_Int32__
+  commentId: M:GameSave.GameSaveManager.DeleteContainer(System.String,UnityAction{System.Int32})
+  name.vb: DeleteContainer(String, UnityAction(Of Integer))
+  fullName: GameSave.GameSaveManager.DeleteContainer(string, UnityAction<int>)
+  fullName.vb: GameSave.GameSaveManager.DeleteContainer(String, UnityAction(Of Integer))
+  nameWithType: GameSaveManager.DeleteContainer(string, UnityAction<int>)
+  nameWithType.vb: GameSaveManager.DeleteContainer(String, UnityAction(Of Integer))
+- uid: GameSave.GameSaveManager.DeleteContainer*
+  name: DeleteContainer
+  href: api/GameSave.GameSaveManager.html#GameSave_GameSaveManager_DeleteContainer_
+  commentId: Overload:GameSave.GameSaveManager.DeleteContainer
+  isSpec: "True"
+  fullName: GameSave.GameSaveManager.DeleteContainer
+  nameWithType: GameSaveManager.DeleteContainer
+- uid: GameSave.GameSaveManager.GetOrCreateContainer(System.String,UnityAction{System.Int32})
+  name: GetOrCreateContainer(string, UnityAction<int>)
+  href: api/GameSave.GameSaveManager.html#GameSave_GameSaveManager_GetOrCreateContainer_System_String_UnityAction_System_Int32__
+  commentId: M:GameSave.GameSaveManager.GetOrCreateContainer(System.String,UnityAction{System.Int32})
+  name.vb: GetOrCreateContainer(String, UnityAction(Of Integer))
+  fullName: GameSave.GameSaveManager.GetOrCreateContainer(string, UnityAction<int>)
+  fullName.vb: GameSave.GameSaveManager.GetOrCreateContainer(String, UnityAction(Of Integer))
+  nameWithType: GameSaveManager.GetOrCreateContainer(string, UnityAction<int>)
+  nameWithType.vb: GameSaveManager.GetOrCreateContainer(String, UnityAction(Of Integer))
+- uid: GameSave.GameSaveManager.GetOrCreateContainer*
+  name: GetOrCreateContainer
+  href: api/GameSave.GameSaveManager.html#GameSave_GameSaveManager_GetOrCreateContainer_
+  commentId: Overload:GameSave.GameSaveManager.GetOrCreateContainer
+  isSpec: "True"
+  fullName: GameSave.GameSaveManager.GetOrCreateContainer
+  nameWithType: GameSaveManager.GetOrCreateContainer
+- uid: GameSave.GameSaveManager.Initialize(XGamingRuntime.XUserHandle,System.String,System.Boolean,UnityAction{System.Int32})
+  name: Initialize(XUserHandle, string, bool, UnityAction<int>)
+  href: api/GameSave.GameSaveManager.html#GameSave_GameSaveManager_Initialize_XGamingRuntime_XUserHandle_System_String_System_Boolean_UnityAction_System_Int32__
+  commentId: M:GameSave.GameSaveManager.Initialize(XGamingRuntime.XUserHandle,System.String,System.Boolean,UnityAction{System.Int32})
+  name.vb: Initialize(XUserHandle, String, Boolean, UnityAction(Of Integer))
+  fullName: GameSave.GameSaveManager.Initialize(XGamingRuntime.XUserHandle, string, bool, UnityAction<int>)
+  fullName.vb: GameSave.GameSaveManager.Initialize(XGamingRuntime.XUserHandle, String, Boolean, UnityAction(Of Integer))
+  nameWithType: GameSaveManager.Initialize(XUserHandle, string, bool, UnityAction<int>)
+  nameWithType.vb: GameSaveManager.Initialize(XUserHandle, String, Boolean, UnityAction(Of Integer))
+- uid: GameSave.GameSaveManager.Initialize*
+  name: Initialize
+  href: api/GameSave.GameSaveManager.html#GameSave_GameSaveManager_Initialize_
+  commentId: Overload:GameSave.GameSaveManager.Initialize
+  isSpec: "True"
+  fullName: GameSave.GameSaveManager.Initialize
+  nameWithType: GameSaveManager.Initialize
+- uid: GameSave.GameSaveManager.LoadGame(System.String,UnityAction{System.Int32,XGamingRuntime.XGameSaveBlob[]})
+  name: LoadGame(string, UnityAction<int, XGameSaveBlob[]>)
+  href: api/GameSave.GameSaveManager.html#GameSave_GameSaveManager_LoadGame_System_String_UnityAction_System_Int32_XGamingRuntime_XGameSaveBlob____
+  commentId: M:GameSave.GameSaveManager.LoadGame(System.String,UnityAction{System.Int32,XGamingRuntime.XGameSaveBlob[]})
+  name.vb: LoadGame(String, UnityAction(Of Integer, XGameSaveBlob()))
+  fullName: GameSave.GameSaveManager.LoadGame(string, UnityAction<int, XGamingRuntime.XGameSaveBlob[]>)
+  fullName.vb: GameSave.GameSaveManager.LoadGame(String, UnityAction(Of Integer, XGamingRuntime.XGameSaveBlob()))
+  nameWithType: GameSaveManager.LoadGame(string, UnityAction<int, XGameSaveBlob[]>)
+  nameWithType.vb: GameSaveManager.LoadGame(String, UnityAction(Of Integer, XGameSaveBlob()))
+- uid: GameSave.GameSaveManager.LoadGame(System.String[],UnityAction{System.Int32,XGamingRuntime.XGameSaveBlob[]})
+  name: LoadGame(string[], UnityAction<int, XGameSaveBlob[]>)
+  href: api/GameSave.GameSaveManager.html#GameSave_GameSaveManager_LoadGame_System_String___UnityAction_System_Int32_XGamingRuntime_XGameSaveBlob____
+  commentId: M:GameSave.GameSaveManager.LoadGame(System.String[],UnityAction{System.Int32,XGamingRuntime.XGameSaveBlob[]})
+  name.vb: LoadGame(String(), UnityAction(Of Integer, XGameSaveBlob()))
+  fullName: GameSave.GameSaveManager.LoadGame(string[], UnityAction<int, XGamingRuntime.XGameSaveBlob[]>)
+  fullName.vb: GameSave.GameSaveManager.LoadGame(String(), UnityAction(Of Integer, XGamingRuntime.XGameSaveBlob()))
+  nameWithType: GameSaveManager.LoadGame(string[], UnityAction<int, XGameSaveBlob[]>)
+  nameWithType.vb: GameSaveManager.LoadGame(String(), UnityAction(Of Integer, XGameSaveBlob()))
+- uid: GameSave.GameSaveManager.LoadGame*
+  name: LoadGame
+  href: api/GameSave.GameSaveManager.html#GameSave_GameSaveManager_LoadGame_
+  commentId: Overload:GameSave.GameSaveManager.LoadGame
+  isSpec: "True"
+  fullName: GameSave.GameSaveManager.LoadGame
+  nameWithType: GameSaveManager.LoadGame
+- uid: GameSave.GameSaveManager.QueryContainerBlobs
+  name: QueryContainerBlobs()
+  href: api/GameSave.GameSaveManager.html#GameSave_GameSaveManager_QueryContainerBlobs
+  commentId: M:GameSave.GameSaveManager.QueryContainerBlobs
+  fullName: GameSave.GameSaveManager.QueryContainerBlobs()
+  nameWithType: GameSaveManager.QueryContainerBlobs()
+- uid: GameSave.GameSaveManager.QueryContainerBlobs(System.String)
+  name: QueryContainerBlobs(string)
+  href: api/GameSave.GameSaveManager.html#GameSave_GameSaveManager_QueryContainerBlobs_System_String_
+  commentId: M:GameSave.GameSaveManager.QueryContainerBlobs(System.String)
+  name.vb: QueryContainerBlobs(String)
+  fullName: GameSave.GameSaveManager.QueryContainerBlobs(string)
+  fullName.vb: GameSave.GameSaveManager.QueryContainerBlobs(String)
+  nameWithType: GameSaveManager.QueryContainerBlobs(string)
+  nameWithType.vb: GameSaveManager.QueryContainerBlobs(String)
+- uid: GameSave.GameSaveManager.QueryContainerBlobs*
+  name: QueryContainerBlobs
+  href: api/GameSave.GameSaveManager.html#GameSave_GameSaveManager_QueryContainerBlobs_
+  commentId: Overload:GameSave.GameSaveManager.QueryContainerBlobs
+  isSpec: "True"
+  fullName: GameSave.GameSaveManager.QueryContainerBlobs
+  nameWithType: GameSaveManager.QueryContainerBlobs
+- uid: GameSave.GameSaveManager.QueryContainers
+  name: QueryContainers()
+  href: api/GameSave.GameSaveManager.html#GameSave_GameSaveManager_QueryContainers
+  commentId: M:GameSave.GameSaveManager.QueryContainers
+  fullName: GameSave.GameSaveManager.QueryContainers()
+  nameWithType: GameSaveManager.QueryContainers()
+- uid: GameSave.GameSaveManager.QueryContainers(System.String)
+  name: QueryContainers(string)
+  href: api/GameSave.GameSaveManager.html#GameSave_GameSaveManager_QueryContainers_System_String_
+  commentId: M:GameSave.GameSaveManager.QueryContainers(System.String)
+  name.vb: QueryContainers(String)
+  fullName: GameSave.GameSaveManager.QueryContainers(string)
+  fullName.vb: GameSave.GameSaveManager.QueryContainers(String)
+  nameWithType: GameSaveManager.QueryContainers(string)
+  nameWithType.vb: GameSaveManager.QueryContainers(String)
+- uid: GameSave.GameSaveManager.QueryContainers*
+  name: QueryContainers
+  href: api/GameSave.GameSaveManager.html#GameSave_GameSaveManager_QueryContainers_
+  commentId: Overload:GameSave.GameSaveManager.QueryContainers
+  isSpec: "True"
+  fullName: GameSave.GameSaveManager.QueryContainers
+  nameWithType: GameSaveManager.QueryContainers
+- uid: GameSave.GameSaveManager.QuerySpaceQuota(UnityAction{System.Int32,System.Int64})
+  name: QuerySpaceQuota(UnityAction<int, long>)
+  href: api/GameSave.GameSaveManager.html#GameSave_GameSaveManager_QuerySpaceQuota_UnityAction_System_Int32_System_Int64__
+  commentId: M:GameSave.GameSaveManager.QuerySpaceQuota(UnityAction{System.Int32,System.Int64})
+  name.vb: QuerySpaceQuota(UnityAction(Of Integer, Long))
+  fullName: GameSave.GameSaveManager.QuerySpaceQuota(UnityAction<int, long>)
+  fullName.vb: GameSave.GameSaveManager.QuerySpaceQuota(UnityAction(Of Integer, Long))
+  nameWithType: GameSaveManager.QuerySpaceQuota(UnityAction<int, long>)
+  nameWithType.vb: GameSaveManager.QuerySpaceQuota(UnityAction(Of Integer, Long))
+- uid: GameSave.GameSaveManager.QuerySpaceQuota*
+  name: QuerySpaceQuota
+  href: api/GameSave.GameSaveManager.html#GameSave_GameSaveManager_QuerySpaceQuota_
+  commentId: Overload:GameSave.GameSaveManager.QuerySpaceQuota
+  isSpec: "True"
+  fullName: GameSave.GameSaveManager.QuerySpaceQuota
+  nameWithType: GameSaveManager.QuerySpaceQuota
+- uid: GameSave.GameSaveManager.SaveGame(System.String,System.String,System.Byte[],UnityAction{System.Int32})
+  name: SaveGame(string, string, byte[], UnityAction<int>)
+  href: api/GameSave.GameSaveManager.html#GameSave_GameSaveManager_SaveGame_System_String_System_String_System_Byte___UnityAction_System_Int32__
+  commentId: M:GameSave.GameSaveManager.SaveGame(System.String,System.String,System.Byte[],UnityAction{System.Int32})
+  name.vb: SaveGame(String, String, Byte(), UnityAction(Of Integer))
+  fullName: GameSave.GameSaveManager.SaveGame(string, string, byte[], UnityAction<int>)
+  fullName.vb: GameSave.GameSaveManager.SaveGame(String, String, Byte(), UnityAction(Of Integer))
+  nameWithType: GameSaveManager.SaveGame(string, string, byte[], UnityAction<int>)
+  nameWithType.vb: GameSaveManager.SaveGame(String, String, Byte(), UnityAction(Of Integer))
+- uid: GameSave.GameSaveManager.SaveGame(System.String,System.String[],System.Collections.Generic.List{System.Byte[]},UnityAction{System.Int32})
+  name: SaveGame(string, string[], List<byte[]>, UnityAction<int>)
+  href: api/GameSave.GameSaveManager.html#GameSave_GameSaveManager_SaveGame_System_String_System_String___System_Collections_Generic_List_System_Byte____UnityAction_System_Int32__
+  commentId: M:GameSave.GameSaveManager.SaveGame(System.String,System.String[],System.Collections.Generic.List{System.Byte[]},UnityAction{System.Int32})
+  name.vb: SaveGame(String, String(), List(Of Byte()), UnityAction(Of Integer))
+  fullName: GameSave.GameSaveManager.SaveGame(string, string[], System.Collections.Generic.List<byte[]>, UnityAction<int>)
+  fullName.vb: GameSave.GameSaveManager.SaveGame(String, String(), System.Collections.Generic.List(Of Byte()), UnityAction(Of Integer))
+  nameWithType: GameSaveManager.SaveGame(string, string[], List<byte[]>, UnityAction<int>)
+  nameWithType.vb: GameSaveManager.SaveGame(String, String(), List(Of Byte()), UnityAction(Of Integer))
+- uid: GameSave.GameSaveManager.SaveGame*
+  name: SaveGame
+  href: api/GameSave.GameSaveManager.html#GameSave_GameSaveManager_SaveGame_
+  commentId: Overload:GameSave.GameSaveManager.SaveGame
+  isSpec: "True"
+  fullName: GameSave.GameSaveManager.SaveGame
+  nameWithType: GameSaveManager.SaveGame
+- uid: GameSave.GameSaveManager.StartContainerUpdate(System.String)
+  name: StartContainerUpdate(string)
+  href: api/GameSave.GameSaveManager.html#GameSave_GameSaveManager_StartContainerUpdate_System_String_
+  commentId: M:GameSave.GameSaveManager.StartContainerUpdate(System.String)
+  name.vb: StartContainerUpdate(String)
+  fullName: GameSave.GameSaveManager.StartContainerUpdate(string)
+  fullName.vb: GameSave.GameSaveManager.StartContainerUpdate(String)
+  nameWithType: GameSaveManager.StartContainerUpdate(string)
+  nameWithType.vb: GameSaveManager.StartContainerUpdate(String)
+- uid: GameSave.GameSaveManager.StartContainerUpdate*
+  name: StartContainerUpdate
+  href: api/GameSave.GameSaveManager.html#GameSave_GameSaveManager_StartContainerUpdate_
+  commentId: Overload:GameSave.GameSaveManager.StartContainerUpdate
+  isSpec: "True"
+  fullName: GameSave.GameSaveManager.StartContainerUpdate
+  nameWithType: GameSaveManager.StartContainerUpdate
+- uid: GameSave.GameSaveManager.SubmitDataBlobToWrite(System.String,System.Byte[])
+  name: SubmitDataBlobToWrite(string, byte[])
+  href: api/GameSave.GameSaveManager.html#GameSave_GameSaveManager_SubmitDataBlobToWrite_System_String_System_Byte___
+  commentId: M:GameSave.GameSaveManager.SubmitDataBlobToWrite(System.String,System.Byte[])
+  name.vb: SubmitDataBlobToWrite(String, Byte())
+  fullName: GameSave.GameSaveManager.SubmitDataBlobToWrite(string, byte[])
+  fullName.vb: GameSave.GameSaveManager.SubmitDataBlobToWrite(String, Byte())
+  nameWithType: GameSaveManager.SubmitDataBlobToWrite(string, byte[])
+  nameWithType.vb: GameSaveManager.SubmitDataBlobToWrite(String, Byte())
+- uid: GameSave.GameSaveManager.SubmitDataBlobToWrite*
+  name: SubmitDataBlobToWrite
+  href: api/GameSave.GameSaveManager.html#GameSave_GameSaveManager_SubmitDataBlobToWrite_
+  commentId: Overload:GameSave.GameSaveManager.SubmitDataBlobToWrite
+  isSpec: "True"
+  fullName: GameSave.GameSaveManager.SubmitDataBlobToWrite
+  nameWithType: GameSaveManager.SubmitDataBlobToWrite
+- uid: GameSave.GameSaveManager.SubmitGameSaveUpdate(UnityAction{System.Int32})
+  name: SubmitGameSaveUpdate(UnityAction<int>)
+  href: api/GameSave.GameSaveManager.html#GameSave_GameSaveManager_SubmitGameSaveUpdate_UnityAction_System_Int32__
+  commentId: M:GameSave.GameSaveManager.SubmitGameSaveUpdate(UnityAction{System.Int32})
+  name.vb: SubmitGameSaveUpdate(UnityAction(Of Integer))
+  fullName: GameSave.GameSaveManager.SubmitGameSaveUpdate(UnityAction<int>)
+  fullName.vb: GameSave.GameSaveManager.SubmitGameSaveUpdate(UnityAction(Of Integer))
+  nameWithType: GameSaveManager.SubmitGameSaveUpdate(UnityAction<int>)
+  nameWithType.vb: GameSaveManager.SubmitGameSaveUpdate(UnityAction(Of Integer))
+- uid: GameSave.GameSaveManager.SubmitGameSaveUpdate*
+  name: SubmitGameSaveUpdate
+  href: api/GameSave.GameSaveManager.html#GameSave_GameSaveManager_SubmitGameSaveUpdate_
+  commentId: Overload:GameSave.GameSaveManager.SubmitGameSaveUpdate
+  isSpec: "True"
+  fullName: GameSave.GameSaveManager.SubmitGameSaveUpdate
+  nameWithType: GameSaveManager.SubmitGameSaveUpdate
 - uid: Global
   name: ''
   href: api/Global.html
