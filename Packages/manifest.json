@@ -1,15 +1,9 @@
 {
   "dependencies": {
     "com.cysharp.unitask": "2.5.0",
-<<<<<<< Updated upstream
     "com.studio23.ss2.authsystem": "2.0.6",
     "com.studio23.ss2.authsystem.xboxcorepc": "file:C:/Unity/com.studio23.ss2.authsystem.xboxcorepc/Assets/Packages/com.studio23.ss2.authsystem.xboxcorepc",
     "com.studio23.ss2.cloudsave": "0.0.1",
-=======
-    "com.studio23.ss2.authsystem": "2.0.8",
-    "com.studio23.ss2.authsystem.xboxcorepc": "0.0.8",
-    "com.studio23.ss2.cloudsave": "0.0.2",
->>>>>>> Stashed changes
     "com.unity.collab-proxy": "2.2.0",
     "com.unity.feature.development": "1.0.1",
     "com.unity.textmeshpro": "3.0.6",
@@ -53,8 +47,7 @@
       "name": "Studio 23",
       "url": "https://package.openupm.com",
       "scopes": [
-        "com.studio23.ss2",
-        "com.cysharp.unitask"
+        "com.studio23.ss2"
       ]
     },
     {

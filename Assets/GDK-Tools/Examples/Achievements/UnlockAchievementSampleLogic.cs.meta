@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< Updated upstream:Assets/GDK-Tools/Examples/Achievements/UnlockAchievementSampleLogic.cs.meta
-guid: 508d05b0504d0d148951627fd6817c83
-========
-guid: 8626cfff389421d44b7e3db6dceae28d
->>>>>>>> Stashed changes:Assets/Packages/com.studio23.ss2.savesystem.xboxcorepc/Runtime/Core/GameSaveManager.cs.meta
+guid: bd69ace6582c55e4a9fe58a79f6e3d8a
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
