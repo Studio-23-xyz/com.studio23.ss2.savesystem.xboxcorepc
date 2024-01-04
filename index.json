@@ -2,172 +2,22 @@
   "api/GameSave.GameSaveManager.html": {
     "href": "api/GameSave.GameSaveManager.html",
     "title": "Class GameSaveManager | |",
-    "keywords": "Class GameSaveManager Namespace GameSave public class GameSaveManager Inheritance object GameSaveManager Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods CloseGameSaveHandles() public void CloseGameSaveHandles() DeleteContainer(string, UnityAction<int>) public void DeleteContainer(string containerName, UnityAction<int> onDeleteContainercomplete) Parameters containerName string onDeleteContainercomplete UnityAction<int> GetOrCreateContainer(string, UnityAction<int>) public void GetOrCreateContainer(string containerName, UnityAction<int> onContainerCreated) Parameters containerName string onContainerCreated UnityAction<int> Initialize(XUserHandle, string, bool, UnityAction<int>) public void Initialize(XUserHandle userHandle, string scid, bool syncOnDemand, UnityAction<int> onInitializationComplete) Parameters userHandle XUserHandle scid string syncOnDemand bool onInitializationComplete UnityAction<int> LoadGame(string, UnityAction<int, XGameSaveBlob[]>) public void LoadGame(string blobBufferName, UnityAction<int, XGameSaveBlob[]> onLoadGameCompleted) Parameters blobBufferName string onLoadGameCompleted UnityAction<int, XGameSaveBlob[]> LoadGame(string[], UnityAction<int, XGameSaveBlob[]>) public void LoadGame(string[] blobBufferNames, UnityAction<int, XGameSaveBlob[]> onLoadGameCompleted) Parameters blobBufferNames string[] onLoadGameCompleted UnityAction<int, XGameSaveBlob[]> QueryContainerBlobs() public XGameSaveBlobInfo[] QueryContainerBlobs() Returns XGameSaveBlobInfo[] QueryContainerBlobs(string) public XGameSaveBlobInfo[] QueryContainerBlobs(string blobPrefix) Parameters blobPrefix string Returns XGameSaveBlobInfo[] QueryContainers() public XGameSaveContainerInfo[] QueryContainers() Returns XGameSaveContainerInfo[] QueryContainers(string) public XGameSaveContainerInfo[] QueryContainers(string containerPrefix) Parameters containerPrefix string Returns XGameSaveContainerInfo[] QuerySpaceQuota(UnityAction<int, long>) public void QuerySpaceQuota(UnityAction<int, long> onSpaceQuotaRequested) Parameters onSpaceQuotaRequested UnityAction<int, long> SaveGame(string, string, byte[], UnityAction<int>) public void SaveGame(string displayName, string blobBufferName, byte[] blobData, UnityAction<int> onSaveGameCompleted) Parameters displayName string blobBufferName string blobData byte[] onSaveGameCompleted UnityAction<int> SaveGame(string, string[], List<byte[]>, UnityAction<int>) public void SaveGame(string displayName, string[] blobBufferNames, List<byte[]> blobDataList, UnityAction<int> onSaveGameCompleted) Parameters displayName string blobBufferNames string[] blobDataList List<byte[]> onSaveGameCompleted UnityAction<int> StartContainerUpdate(string) public int StartContainerUpdate(string containerDisplayName) Parameters containerDisplayName string Returns int SubmitDataBlobToWrite(string, byte[]) public int SubmitDataBlobToWrite(string blobName, byte[] data) Parameters blobName string data byte[] Returns int SubmitGameSaveUpdate(UnityAction<int>) public void SubmitGameSaveUpdate(UnityAction<int> onSubmitGameSaveComplete) Parameters onSubmitGameSaveComplete UnityAction<int>"
+    "keywords": "Class GameSaveManager Namespace GameSave public class GameSaveManager Inheritance object GameSaveManager Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods CloseGameSaveHandles() public void CloseGameSaveHandles() DeleteContainer(string, UnityAction<int>) public void DeleteContainer(string containerName, UnityAction<int> onDeleteContainercomplete) Parameters containerName string onDeleteContainercomplete UnityAction<int> GetOrCreateContainer(string, UnityAction<int>) public void GetOrCreateContainer(string containerName, UnityAction<int> onContainerCreated) Parameters containerName string onContainerCreated UnityAction<int> Initialize(XUserHandle, string, bool, UnityAction<int>) public void Initialize(XUserHandle userHandle, string scid, bool syncOnDemand, UnityAction<int> onInitializationComplete) Parameters userHandle XUserHandle scid string syncOnDemand bool onInitializationComplete UnityAction<int> LoadGame(string, UnityAction<int, XGameSaveBlob[]>) public void LoadGame(string blobBufferName, UnityAction<int, XGameSaveBlob[]> onLoadGameCompleted) Parameters blobBufferName string onLoadGameCompleted UnityAction<int, XGameSaveBlob[]> LoadGame(string[], UnityAction<int, XGameSaveBlob[]>) public void LoadGame(string[] blobBufferNames, UnityAction<int, XGameSaveBlob[]> onLoadGameCompleted) Parameters blobBufferNames string[] onLoadGameCompleted UnityAction<int, XGameSaveBlob[]> QuerySpaceQuota(UnityAction<int, long>) public void QuerySpaceQuota(UnityAction<int, long> onSpaceQuotaRequested) Parameters onSpaceQuotaRequested UnityAction<int, long> SaveGame(string, string, byte[], UnityAction<int>) public void SaveGame(string displayName, string blobBufferName, byte[] blobData, UnityAction<int> onSaveGameCompleted) Parameters displayName string blobBufferName string blobData byte[] onSaveGameCompleted UnityAction<int> SaveGame(string, string[], List<byte[]>, UnityAction<int>) public void SaveGame(string displayName, string[] blobBufferNames, List<byte[]> blobDataList, UnityAction<int> onSaveGameCompleted) Parameters displayName string blobBufferNames string[] blobDataList List<byte[]> onSaveGameCompleted UnityAction<int> StartContainerUpdate(string) public int StartContainerUpdate(string containerDisplayName) Parameters containerDisplayName string Returns int SubmitDataBlobToWrite(string, byte[]) public int SubmitDataBlobToWrite(string blobName, byte[] data) Parameters blobName string data byte[] Returns int SubmitGameSaveUpdate(UnityAction<int>) public void SubmitGameSaveUpdate(UnityAction<int> onSubmitGameSaveComplete) Parameters onSubmitGameSaveComplete UnityAction<int>"
   },
   "api/GameSave.html": {
     "href": "api/GameSave.html",
     "title": "Namespace GameSave | |",
     "keywords": "Namespace GameSave Classes GameSaveManager"
   },
-  "api/Global.GameSaveSampleLogic.html": {
-    "href": "api/Global.GameSaveSampleLogic.html",
-    "title": "Class GameSaveSampleLogic | |",
-    "keywords": "Class GameSaveSampleLogic Namespace Global public class GameSaveSampleLogic : MonoBehaviour Inheritance object GameSaveSampleLogic Fields output public Text output Field Value Text Methods Load() public void Load() Save() public void Save()"
-  },
-  "api/Global.GdkBuild.html": {
-    "href": "api/Global.GdkBuild.html",
-    "title": "Class GdkBuild | |",
-    "keywords": "Class GdkBuild Namespace Global public static class GdkBuild Inheritance object GdkBuild Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods PostBuild(string, string, bool) Runs the post build tasks to create a GDK package. public static bool PostBuild(string pcStandaloneBuildPath, string gdkBuildOutputFolderPath, bool createPackageForStoreUpload) Parameters pcStandaloneBuildPath string The path to your PC Standalone build output folder. gdkBuildOutputFolderPath string The path to the folder where you would like the GDK build to go. createPackageForStoreUpload bool True if you want to create a package for uploading to the store. False to create a package to run on your local machine. Returns bool True if the tasks succeeded. False if one or more tasks failed. PreBuild(string) Runs pre build tasks to create a GDK package. Note: You need to define MICROSOFT_GAME_CORE in the custom scripting defines for the standalone build target. public static bool PreBuild(string pcStandaloneBuildPath) Parameters pcStandaloneBuildPath string Returns bool"
-  },
-  "api/Global.GdkPostBuild.html": {
-    "href": "api/Global.GdkPostBuild.html",
-    "title": "Class GdkPostBuild | |",
-    "keywords": "Class GdkPostBuild Namespace Global public class GdkPostBuild : IPostprocessBuild Inheritance object GdkPostBuild Properties callbackOrder public int callbackOrder { get; } Property Value int Methods OnPostprocessBuild(BuildTarget, string) public void OnPostprocessBuild(BuildTarget target, string outputPath) Parameters target BuildTarget outputPath string"
-  },
-  "api/Global.SampleInGamePurchasableItem.html": {
-    "href": "api/Global.SampleInGamePurchasableItem.html",
-    "title": "Class SampleInGamePurchasableItem | |",
-    "keywords": "Class SampleInGamePurchasableItem Namespace Global public class SampleInGamePurchasableItem : MonoBehaviour Inheritance object SampleInGamePurchasableItem Fields ownedUIElement public Text ownedUIElement Field Value Text priceUIElement public Text priceUIElement Field Value Text titleUIElement public Text titleUIElement Field Value Text Methods Purchase() public void Purchase()"
-  },
-  "api/Global.StoreSampleLogic.html": {
-    "href": "api/Global.StoreSampleLogic.html",
-    "title": "Class StoreSampleLogic | |",
-    "keywords": "Class StoreSampleLogic Namespace Global public class StoreSampleLogic : MonoBehaviour Inheritance object StoreSampleLogic Fields canvasTransform public Transform canvasTransform Field Value Transform inGamePurchasableItemPrefab public GameObject inGamePurchasableItemPrefab Field Value GameObject Methods ShowDLC() public void ShowDLC()"
-  },
-  "api/Global.UnlockAchievementSampleLogic.html": {
-    "href": "api/Global.UnlockAchievementSampleLogic.html",
-    "title": "Class UnlockAchievementSampleLogic | |",
-    "keywords": "Class UnlockAchievementSampleLogic Namespace Global public class UnlockAchievementSampleLogic : MonoBehaviour Inheritance object UnlockAchievementSampleLogic Fields output public Text output Field Value Text Methods UnlockAchievement() public void UnlockAchievement()"
-  },
-  "api/Global.html": {
-    "href": "api/Global.html",
-    "title": "Namespace | |",
-    "keywords": "Namespace Classes GameSaveSampleLogic GdkBuild GdkPostBuild SampleInGamePurchasableItem StoreSampleLogic UnlockAchievementSampleLogic"
-  },
-  "api/Microsoft.GameCore.Tools.GdkBuildEditorWindow.html": {
-    "href": "api/Microsoft.GameCore.Tools.GdkBuildEditorWindow.html",
-    "title": "Class GdkBuildEditorWindow | |",
-    "keywords": "Class GdkBuildEditorWindow Namespace Microsoft.GameCore.Tools public class GdkBuildEditorWindow : EditorWindow Inheritance object GdkBuildEditorWindow"
-  },
-  "api/Microsoft.GameCore.Tools.GdkEditorHelpers.html": {
-    "href": "api/Microsoft.GameCore.Tools.GdkEditorHelpers.html",
-    "title": "Class GdkEditorHelpers | |",
-    "keywords": "Class GdkEditorHelpers Namespace Microsoft.GameCore.Tools public class GdkEditorHelpers : ScriptableObject Inheritance object GdkEditorHelpers"
-  },
-  "api/Microsoft.GameCore.Tools.GdkPlugin.html": {
-    "href": "api/Microsoft.GameCore.Tools.GdkPlugin.html",
-    "title": "Class GdkPlugin | |",
-    "keywords": "Class GdkPlugin Namespace Microsoft.GameCore.Tools public static class GdkPlugin Inheritance object GdkPlugin Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString()"
-  },
-  "api/Microsoft.GameCore.Tools.GdkSwitchSandboxEditorWindow.html": {
-    "href": "api/Microsoft.GameCore.Tools.GdkSwitchSandboxEditorWindow.html",
-    "title": "Class GdkSwitchSandboxEditorWindow | |",
-    "keywords": "Class GdkSwitchSandboxEditorWindow Namespace Microsoft.GameCore.Tools public class GdkSwitchSandboxEditorWindow : EditorWindow Inheritance object GdkSwitchSandboxEditorWindow"
-  },
-  "api/Microsoft.GameCore.Tools.html": {
-    "href": "api/Microsoft.GameCore.Tools.html",
-    "title": "Namespace Microsoft.GameCore.Tools | |",
-    "keywords": "Namespace Microsoft.GameCore.Tools Classes GdkBuildEditorWindow GdkEditorHelpers GdkPlugin GdkSwitchSandboxEditorWindow"
-  },
-  "api/Microsoft.GameCore.Utilities.GdkUtilities.html": {
-    "href": "api/Microsoft.GameCore.Utilities.GdkUtilities.html",
-    "title": "Class GdkUtilities | |",
-    "keywords": "Class GdkUtilities Namespace Microsoft.GameCore.Utilities public class GdkUtilities Inheritance object GdkUtilities Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Properties GameConfigPath public static string GameConfigPath { get; } Property Value string GdkToolsPath public static string GdkToolsPath { get; } Property Value string GdkVersion public static string GdkVersion { get; } Property Value string PluginDllPath public static string PluginDllPath { get; } Property Value string RootPluginPath public static string RootPluginPath { get; } Property Value string XCurlLibName public static string XCurlLibName { get; } Property Value string XCurlLibPath public static string XCurlLibPath { get; } Property Value string XsapiLibName public static string XsapiLibName { get; } Property Value string XsapiLibPath public static string XsapiLibPath { get; } Property Value string Methods PullGdkDlls() Copy DLLs from GDK if not currently in the plugin or if a different GDK version is detected public static void PullGdkDlls()"
-  },
-  "api/Microsoft.GameCore.Utilities.html": {
-    "href": "api/Microsoft.GameCore.Utilities.html",
-    "title": "Namespace Microsoft.GameCore.Utilities | |",
-    "keywords": "Namespace Microsoft.GameCore.Utilities Classes GdkUtilities"
-  },
-  "api/Microsoft.Xbox.ErrorEventArgs.html": {
-    "href": "api/Microsoft.Xbox.ErrorEventArgs.html",
-    "title": "Class ErrorEventArgs | |",
-    "keywords": "Class ErrorEventArgs Namespace Microsoft.Xbox public class ErrorEventArgs : EventArgs Inheritance object EventArgs ErrorEventArgs Inherited Members EventArgs.Empty object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors ErrorEventArgs(string, string) public ErrorEventArgs(string errorCode, string errorMessage) Parameters errorCode string errorMessage string Properties ErrorCode public string ErrorCode { get; } Property Value string ErrorMessage public string ErrorMessage { get; } Property Value string"
-  },
-  "api/Microsoft.Xbox.GameSaveLoadedArgs.html": {
-    "href": "api/Microsoft.Xbox.GameSaveLoadedArgs.html",
-    "title": "Class GameSaveLoadedArgs | |",
-    "keywords": "Class GameSaveLoadedArgs Namespace Microsoft.Xbox public class GameSaveLoadedArgs : EventArgs Inheritance object EventArgs GameSaveLoadedArgs Inherited Members EventArgs.Empty object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors GameSaveLoadedArgs(byte[]) public GameSaveLoadedArgs(byte[] data) Parameters data byte[] Properties Data public byte[] Data { get; } Property Value byte[]"
-  },
-  "api/Microsoft.Xbox.Gdk.OnErrorHandler.html": {
-    "href": "api/Microsoft.Xbox.Gdk.OnErrorHandler.html",
-    "title": "Delegate Gdk.OnErrorHandler | |",
-    "keywords": "Delegate Gdk.OnErrorHandler Namespace Microsoft.Xbox public delegate void Gdk.OnErrorHandler(object sender, ErrorEventArgs e) Parameters sender object e ErrorEventArgs"
-  },
-  "api/Microsoft.Xbox.Gdk.OnGameSaveLoadedHandler.html": {
-    "href": "api/Microsoft.Xbox.Gdk.OnGameSaveLoadedHandler.html",
-    "title": "Delegate Gdk.OnGameSaveLoadedHandler | |",
-    "keywords": "Delegate Gdk.OnGameSaveLoadedHandler Namespace Microsoft.Xbox public delegate void Gdk.OnGameSaveLoadedHandler(object sender, GameSaveLoadedArgs e) Parameters sender object e GameSaveLoadedArgs"
-  },
-  "api/Microsoft.Xbox.Gdk.html": {
-    "href": "api/Microsoft.Xbox.Gdk.html",
-    "title": "Class Gdk | |",
-    "keywords": "Class Gdk Namespace Microsoft.Xbox public class Gdk : MonoBehaviour Inheritance object Gdk Fields gamertagLabel Used to display gamertag in Sign-In sample public Text gamertagLabel Field Value Text scid public string scid Field Value string signInOnStart public bool signInOnStart Field Value bool Properties Helpers Static function for getting a reference to an instance of the Helpers class. This class contains useful methods for integrating your game with Xbox. public static Gdk Helpers { get; } Property Value Gdk The singleton instance of the Helpers class. Methods LoadSaveData() public void LoadSaveData() Save(byte[]) public void Save(byte[] data) Parameters data byte[] SignIn() public void SignIn() Succeeded(int, string) protected static bool Succeeded(int hresult, string operationFriendlyName) Parameters hresult int operationFriendlyName string Returns bool UnlockAchievement(string) public void UnlockAchievement(string achievementId) Parameters achievementId string Events OnError public event Gdk.OnErrorHandler OnError Event Type Gdk.OnErrorHandler OnGameSaveLoaded public event Gdk.OnGameSaveLoadedHandler OnGameSaveLoaded Event Type Gdk.OnGameSaveLoadedHandler"
-  },
-  "api/Microsoft.Xbox.XGameSaveWrapper.DeleteCallback.html": {
-    "href": "api/Microsoft.Xbox.XGameSaveWrapper.DeleteCallback.html",
-    "title": "Delegate XGameSaveWrapper.DeleteCallback | |",
-    "keywords": "Delegate XGameSaveWrapper.DeleteCallback Namespace Microsoft.Xbox Callback invoked when the QueryContainerBlobs async task completes. public delegate void XGameSaveWrapper.DeleteCallback(int hresult) Parameters hresult int The hresult of the operation."
-  },
-  "api/Microsoft.Xbox.XGameSaveWrapper.GetQuotaCallback.html": {
-    "href": "api/Microsoft.Xbox.XGameSaveWrapper.GetQuotaCallback.html",
-    "title": "Delegate XGameSaveWrapper.GetQuotaCallback | |",
-    "keywords": "Delegate XGameSaveWrapper.GetQuotaCallback Namespace Microsoft.Xbox Callback invoked when the GetQuotaCallback async task completes. public delegate void XGameSaveWrapper.GetQuotaCallback(int hresult, long remainingQuota) Parameters hresult int The hresult of the operation. remainingQuota long The number of bytes still available within the storage space."
-  },
-  "api/Microsoft.Xbox.XGameSaveWrapper.InitializeCallback.html": {
-    "href": "api/Microsoft.Xbox.XGameSaveWrapper.InitializeCallback.html",
-    "title": "Delegate XGameSaveWrapper.InitializeCallback | |",
-    "keywords": "Delegate XGameSaveWrapper.InitializeCallback Namespace Microsoft.Xbox Callback invoked when the InitializeAsync async task completes. public delegate void XGameSaveWrapper.InitializeCallback(int hresult) Parameters hresult int The hresult of the operation."
-  },
-  "api/Microsoft.Xbox.XGameSaveWrapper.LoadCallback.html": {
-    "href": "api/Microsoft.Xbox.XGameSaveWrapper.LoadCallback.html",
-    "title": "Delegate XGameSaveWrapper.LoadCallback | |",
-    "keywords": "Delegate XGameSaveWrapper.LoadCallback Namespace Microsoft.Xbox Callback invoked when the QueryContainerBlobs async task completes. public delegate void XGameSaveWrapper.LoadCallback(int hresult, byte[] blobData) Parameters hresult int The hresult of the operation. blobData byte[] An array of bytes contained in the blob (file). If there is nothing matching the container name and blob name, this will be an empty array."
-  },
-  "api/Microsoft.Xbox.XGameSaveWrapper.QueryBlobsCallback.html": {
-    "href": "api/Microsoft.Xbox.XGameSaveWrapper.QueryBlobsCallback.html",
-    "title": "Delegate XGameSaveWrapper.QueryBlobsCallback | |",
-    "keywords": "Delegate XGameSaveWrapper.QueryBlobsCallback Namespace Microsoft.Xbox Callback invoked when the QueryContainerBlobs async task completes. public delegate void XGameSaveWrapper.QueryBlobsCallback(int hresult, Dictionary<string, uint> blobInfos) Parameters hresult int The hresult of the operation. blobInfos Dictionary<string, uint> An dictionary of the blob names and sizes matching the search conditions."
-  },
-  "api/Microsoft.Xbox.XGameSaveWrapper.QueryContainersCallback.html": {
-    "href": "api/Microsoft.Xbox.XGameSaveWrapper.QueryContainersCallback.html",
-    "title": "Delegate XGameSaveWrapper.QueryContainersCallback | |",
-    "keywords": "Delegate XGameSaveWrapper.QueryContainersCallback Namespace Microsoft.Xbox Callback invoked when the QueryContainers async task completes. public delegate void XGameSaveWrapper.QueryContainersCallback(int hresult, string[] containerNames) Parameters hresult int The hresult of the operation. containerNames string[] An array of the container names matching the search conditions."
-  },
-  "api/Microsoft.Xbox.XGameSaveWrapper.SaveCallback.html": {
-    "href": "api/Microsoft.Xbox.XGameSaveWrapper.SaveCallback.html",
-    "title": "Delegate XGameSaveWrapper.SaveCallback | |",
-    "keywords": "Delegate XGameSaveWrapper.SaveCallback Namespace Microsoft.Xbox Callback invoked when the QueryContainerBlobs async task completes. public delegate void XGameSaveWrapper.SaveCallback(int hresult) Parameters hresult int The hresult of the operation."
-  },
-  "api/Microsoft.Xbox.XGameSaveWrapper.XUserHandle.html": {
-    "href": "api/Microsoft.Xbox.XGameSaveWrapper.XUserHandle.html",
-    "title": "Struct XGameSaveWrapper.XUserHandle | |",
-    "keywords": "Struct XGameSaveWrapper.XUserHandle Namespace Microsoft.Xbox public struct XGameSaveWrapper.XUserHandle Inherited Members ValueType.Equals(object) ValueType.GetHashCode() ValueType.ToString() object.Equals(object, object) object.GetType() object.ReferenceEquals(object, object)"
-  },
-  "api/Microsoft.Xbox.XGameSaveWrapper.html": {
-    "href": "api/Microsoft.Xbox.XGameSaveWrapper.html",
-    "title": "Class XGameSaveWrapper | |",
-    "keywords": "Class XGameSaveWrapper Namespace Microsoft.Xbox public class XGameSaveWrapper Inheritance object XGameSaveWrapper Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods Delete(string, DeleteCallback) Deletes a container along with all of its blobs (files). public void Delete(string containerName, XGameSaveWrapper.DeleteCallback callback) Parameters containerName string Name of the container to delete. callback XGameSaveWrapper.DeleteCallback Callback invoked when the async task completes. DeleteCallback(Int32 hresult) Delete(string, string, DeleteCallback) Deletes a specific blob (file) from within the specified container. public void Delete(string containerName, string blobName, XGameSaveWrapper.DeleteCallback callback) Parameters containerName string Name of the container. blobName string Name of the blob (file) to delete from the specified container. callback XGameSaveWrapper.DeleteCallback Callback invoked when the async task completes. DeleteCallback(Int32 hresult) Delete(string, string[], DeleteCallback) public void Delete(string containerName, string[] blobNames, XGameSaveWrapper.DeleteCallback callback) Parameters containerName string blobNames string[] callback XGameSaveWrapper.DeleteCallback ~XGameSaveWrapper() protected ~XGameSaveWrapper() GetQuotaAsync(GetQuotaCallback) Returns the amount of data available to store using the Save game wrapper. public void GetQuotaAsync(XGameSaveWrapper.GetQuotaCallback callback) Parameters callback XGameSaveWrapper.GetQuotaCallback Callback invoked when the async task completes. GetQuotaCallback(Int32 hresult, Int64 remainingQuota) InitializeAsync(XUserHandle, string, InitializeCallback) Intializes the save game wrapper and may initiate a sync of all of the containers for specified user of the game. public void InitializeAsync(XGameSaveWrapper.XUserHandle userHandle, string scid, XGameSaveWrapper.InitializeCallback callback) Parameters userHandle XGameSaveWrapper.XUserHandle Handle of the Xbox Live User whose saves are to be managed. scid string Service configuration ID (SCID) of the game whose saves are to be managed. callback XGameSaveWrapper.InitializeCallback Callback invoked when the async task completes. InitializeCallback(Int32 hresult) Load(string, string, LoadCallback) Loads the data from a given blob (file) that is within the specified container. public void Load(string containerName, string blobName, XGameSaveWrapper.LoadCallback callback) Parameters containerName string Name of the container. blobName string Name of the blob (file) to load data from. callback XGameSaveWrapper.LoadCallback Callback invoked when the async task completes. LoadCallback(Int32 hresult, byte[] blobData) QueryContainerBlobs(string, QueryBlobsCallback) public void QueryContainerBlobs(string containerName, XGameSaveWrapper.QueryBlobsCallback callback) Parameters containerName string callback XGameSaveWrapper.QueryBlobsCallback QueryContainers(string, QueryContainersCallback) Queries for all of the container names in the storage space for the title that match the search conditions. public void QueryContainers(string containerNamePrefix, XGameSaveWrapper.QueryContainersCallback callback) Parameters containerNamePrefix string Name (or prefix of the name) of the containers to search for. If you pass in an empty string, the method will return all of the container names. callback XGameSaveWrapper.QueryContainersCallback Callback invoked when the async task completes. QueryContainersCallback(Int32 hresult, string[] containerNames) Save(string, string, byte[], SaveCallback) Saves data to the blob (file) within the specified container. public void Save(string containerName, string blobName, byte[] blobData, XGameSaveWrapper.SaveCallback callback) Parameters containerName string Name of the container. blobName string Name of the blob (file) to save the data to within the specified container. blobData byte[] The bytes that are to be written to the blob (file). callback XGameSaveWrapper.SaveCallback Callback invoked when the async task completes. SaveCallback(Int32 hresult)"
-  },
-  "api/Microsoft.Xbox.html": {
-    "href": "api/Microsoft.Xbox.html",
-    "title": "Namespace Microsoft.Xbox | |",
-    "keywords": "Namespace Microsoft.Xbox Classes ErrorEventArgs GameSaveLoadedArgs Gdk XGameSaveWrapper Structs XGameSaveWrapper.XUserHandle Delegates Gdk.OnErrorHandler Gdk.OnGameSaveLoadedHandler XGameSaveWrapper.DeleteCallback Callback invoked when the QueryContainerBlobs async task completes. XGameSaveWrapper.GetQuotaCallback Callback invoked when the GetQuotaCallback async task completes. XGameSaveWrapper.InitializeCallback Callback invoked when the InitializeAsync async task completes. XGameSaveWrapper.LoadCallback Callback invoked when the QueryContainerBlobs async task completes. XGameSaveWrapper.QueryBlobsCallback Callback invoked when the QueryContainerBlobs async task completes. XGameSaveWrapper.QueryContainersCallback Callback invoked when the QueryContainers async task completes. XGameSaveWrapper.SaveCallback Callback invoked when the QueryContainerBlobs async task completes."
-  },
-  "api/Studio23.SS2.SaveSystem.XboxCorePc.Core.CloudAbstractSaveLoadProvider.html": {
-    "href": "api/Studio23.SS2.SaveSystem.XboxCorePc.Core.CloudAbstractSaveLoadProvider.html",
-    "title": "Class CloudAbstractSaveLoadProvider | |",
-    "keywords": "Class CloudAbstractSaveLoadProvider Namespace Studio23.SS2.SaveSystem.XboxCorePc.Core public class CloudAbstractSaveLoadProvider : AbstractCloudSaveProvider Inheritance object CloudAbstractSaveLoadProvider Methods DownloadFromCloud(string, string) public override void DownloadFromCloud(string key, string downloadLocation) Parameters key string downloadLocation string InitializePlatformService() public override void InitializePlatformService() UploadToCloud(string, string) public override void UploadToCloud(string key, string filepath) Parameters key string filepath string"
-  },
-  "api/Studio23.SS2.SaveSystem.XboxCorePc.Core.Employee.html": {
-    "href": "api/Studio23.SS2.SaveSystem.XboxCorePc.Core.Employee.html",
-    "title": "Class Employee | |",
-    "keywords": "Class Employee Namespace Studio23.SS2.SaveSystem.XboxCorePc.Core [Serializable] public class Employee Inheritance object Employee Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Fields Age public int Age Field Value int Name public string Name Field Value string"
+  "api/Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.html": {
+    "href": "api/Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.html",
+    "title": "Class XboxPCCloudSaveProvider | |",
+    "keywords": "Class XboxPCCloudSaveProvider Namespace Studio23.SS2.SaveSystem.XboxCorePc.Core public class XboxPCCloudSaveProvider : AbstractCloudSaveProvider Inheritance object XboxPCCloudSaveProvider Methods DownloadFromCloud(string, string) protected override void DownloadFromCloud(string key, string downloadLocation) Parameters key string downloadLocation string Initialize() protected override void Initialize() UploadToCloud(string, string) protected override void UploadToCloud(string key, string filepath) Parameters key string filepath string"
   },
   "api/Studio23.SS2.SaveSystem.XboxCorePc.Core.html": {
     "href": "api/Studio23.SS2.SaveSystem.XboxCorePc.Core.html",
     "title": "Namespace Studio23.SS2.SaveSystem.XboxCorePc.Core | |",
-    "keywords": "Namespace Studio23.SS2.SaveSystem.XboxCorePc.Core Classes CloudAbstractSaveLoadProvider Employee"
+    "keywords": "Namespace Studio23.SS2.SaveSystem.XboxCorePc.Core Classes XboxPCCloudSaveProvider"
   },
   "api/XGamingRuntime.EquatableHandle.html": {
     "href": "api/XGamingRuntime.EquatableHandle.html",

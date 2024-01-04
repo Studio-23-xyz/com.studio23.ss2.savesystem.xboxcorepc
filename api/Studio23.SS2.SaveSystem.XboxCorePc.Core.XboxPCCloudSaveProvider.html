@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class GameSaveSampleLogic
+      <title>Class XboxPCCloudSaveProvider
  |  |  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class GameSaveSampleLogic
+      <meta name="title" content="Class XboxPCCloudSaveProvider
  |  |  ">
       
       <link rel="icon" href="../favicon.ico">
@@ -17,7 +17,7 @@
       <meta name="docfx:rel" content="../">
       <meta name="docfx:disablenewtab" content="true">
       
-      <meta name="docfx:docurl" content="https://github.com/Studio-23-xyz/com.studio23.ss2.savesystem.xboxcorepc/new/main/apiSpec/new?filename=Global_GameSaveSampleLogic.md&amp;value=---%0Auid%3A%20Global.GameSaveSampleLogic%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/Studio-23-xyz/com.studio23.ss2.savesystem.xboxcorepc/new/main/apiSpec/new?filename=Studio23_SS2_SaveSystem_XboxCorePc_Core_XboxPCCloudSaveProvider.md&amp;value=---%0Auid%3A%20Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,17 +85,17 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Global.GameSaveSampleLogic">
+        <article data-uid="Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider">
 
 
 
-  <h1 id="Global_GameSaveSampleLogic" data-uid="Global.GameSaveSampleLogic" class="text-break">
-    Class GameSaveSampleLogic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.savesystem.xboxcorepc/blob/main/Assets/GDK-Tools/Examples/Cloud Saves/GameSaveSampleLogic.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  <h1 id="Studio23_SS2_SaveSystem_XboxCorePc_Core_XboxPCCloudSaveProvider" data-uid="Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider" class="text-break">
+    Class XboxPCCloudSaveProvider
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.savesystem.xboxcorepc/blob/main/Assets/Packages/com.studio23.ss2.savesystem.xboxcorepc/Runtime/Core/XboxPCCloudSaveProvider.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Global.html">Global</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Studio23.html">Studio23</a>.<a class="xref" href="Studio23.SS2.html">SS2</a>.<a class="xref" href="Studio23.SS2.SaveSystem.html">SaveSystem</a>.<a class="xref" href="Studio23.SS2.SaveSystem.XboxCorePc.html">XboxCorePc</a>.<a class="xref" href="Studio23.SS2.SaveSystem.XboxCorePc.Core.html">Core</a></dd></dl>
   
   </div>
 
@@ -103,7 +103,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class GameSaveSampleLogic : MonoBehaviour</code></pre>
+    <pre><code class="lang-csharp hljs">public class XboxPCCloudSaveProvider : AbstractCloudSaveProvider</code></pre>
   </div>
 
 
@@ -113,42 +113,8 @@
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">GameSaveSampleLogic</span></div>
+      <div><span class="xref">XboxPCCloudSaveProvider</span></div>
     </dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-  <h2 class="section" id="fields">Fields
-</h2>
-
-
-
-  <h3 id="Global_GameSaveSampleLogic_output" data-uid="Global.GameSaveSampleLogic.output">
-  output
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.savesystem.xboxcorepc/blob/main/Assets/GDK-Tools/Examples/Cloud Saves/GameSaveSampleLogic.cs/#L15"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Text output</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">Text</span></dt>
-    <dd></dd>
   </dl>
 
 
@@ -163,18 +129,51 @@
 </h2>
 
 
-  <a id="Global_GameSaveSampleLogic_Load_" data-uid="Global.GameSaveSampleLogic.Load*"></a>
+  <a id="Studio23_SS2_SaveSystem_XboxCorePc_Core_XboxPCCloudSaveProvider_DownloadFromCloud_" data-uid="Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.DownloadFromCloud*"></a>
 
-  <h3 id="Global_GameSaveSampleLogic_Load" data-uid="Global.GameSaveSampleLogic.Load">
-  Load()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.savesystem.xboxcorepc/blob/main/Assets/GDK-Tools/Examples/Cloud Saves/GameSaveSampleLogic.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Studio23_SS2_SaveSystem_XboxCorePc_Core_XboxPCCloudSaveProvider_DownloadFromCloud_System_String_System_String_" data-uid="Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.DownloadFromCloud(System.String,System.String)">
+  DownloadFromCloud(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.savesystem.xboxcorepc/blob/main/Assets/Packages/com.studio23.ss2.savesystem.xboxcorepc/Runtime/Core/XboxPCCloudSaveProvider.cs/#L91"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Load()</code></pre>
+    <pre><code class="lang-csharp hljs">protected override void DownloadFromCloud(string key, string downloadLocation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>downloadLocation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Studio23_SS2_SaveSystem_XboxCorePc_Core_XboxPCCloudSaveProvider_Initialize_" data-uid="Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.Initialize*"></a>
+
+  <h3 id="Studio23_SS2_SaveSystem_XboxCorePc_Core_XboxPCCloudSaveProvider_Initialize" data-uid="Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.Initialize">
+  Initialize()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.savesystem.xboxcorepc/blob/main/Assets/Packages/com.studio23.ss2.savesystem.xboxcorepc/Runtime/Core/XboxPCCloudSaveProvider.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Initialize()</code></pre>
   </div>
 
 
@@ -189,20 +188,27 @@
 
 
 
-  <a id="Global_GameSaveSampleLogic_Save_" data-uid="Global.GameSaveSampleLogic.Save*"></a>
+  <a id="Studio23_SS2_SaveSystem_XboxCorePc_Core_XboxPCCloudSaveProvider_UploadToCloud_" data-uid="Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.UploadToCloud*"></a>
 
-  <h3 id="Global_GameSaveSampleLogic_Save" data-uid="Global.GameSaveSampleLogic.Save">
-  Save()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.savesystem.xboxcorepc/blob/main/Assets/GDK-Tools/Examples/Cloud Saves/GameSaveSampleLogic.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Studio23_SS2_SaveSystem_XboxCorePc_Core_XboxPCCloudSaveProvider_UploadToCloud_System_String_System_String_" data-uid="Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.UploadToCloud(System.String,System.String)">
+  UploadToCloud(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Studio-23-xyz/com.studio23.ss2.savesystem.xboxcorepc/blob/main/Assets/Packages/com.studio23.ss2.savesystem.xboxcorepc/Runtime/Core/XboxPCCloudSaveProvider.cs/#L48"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Save()</code></pre>
+    <pre><code class="lang-csharp hljs">protected override void UploadToCloud(string key, string filepath)</code></pre>
   </div>
 
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>filepath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
