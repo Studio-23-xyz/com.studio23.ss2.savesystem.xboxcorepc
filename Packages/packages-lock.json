@@ -8,29 +8,29 @@
       "url": "https://package.openupm.com"
     },
     "com.studio23.ss2.authsystem": {
-      "version": "2.0.7",
+      "version": "2.0.9",
       "depth": 1,
       "source": "registry",
       "dependencies": {},
       "url": "https://package.openupm.com"
     },
     "com.studio23.ss2.authsystem.xboxcorepc": {
-      "version": "file:C:/Unity/com.studio23.ss2.authsystem.xboxcorepc/Assets/Packages/com.studio23.ss2.authsystem.xboxcorepc",
-      "depth": 0,
-      "source": "local",
-      "dependencies": {
-        "com.studio23.ss2.authsystem": "2.0.2",
-        "com.cysharp.unitask": "2.5.0"
-      }
-    },
-    "com.studio23.ss2.cloudsave": {
-      "version": "0.0.1",
+      "version": "0.0.8",
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.studio23.ss2.authsystem": "2.0.7"
+        "com.studio23.ss2.authsystem": "2.0.8",
+        "com.cysharp.unitask": "2.5.0"
       },
       "url": "https://package.openupm.com"
+    },
+    "com.studio23.ss2.cloudsave": {
+      "version": "file:C:/Github Projects/Unity/com.studio23.ss2.cloudsave/Assets/Packages/com.studio23.ss2.cloudsave",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {
+        "com.studio23.ss2.authsystem": "2.0.9"
+      }
     },
     "com.unity.collab-proxy": {
       "version": "2.2.0",

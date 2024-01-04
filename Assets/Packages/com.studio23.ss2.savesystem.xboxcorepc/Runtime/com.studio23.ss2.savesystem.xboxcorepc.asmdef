@@ -4,9 +4,14 @@
     "references": [
         "GUID:661a6088aa5ffcf459b89da5f0fadcb1",
         "GUID:fa11062f96de91b409f6d85fa6d2d5c7",
-        "GUID:023937cd9bbf4264b9d968de791a7abf"
+        "GUID:023937cd9bbf4264b9d968de791a7abf",
+        "GUID:941e0baf56c94a648a2ed7c0a3537b0f",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23"
     ],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor",
+        "WindowsStandalone64"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
