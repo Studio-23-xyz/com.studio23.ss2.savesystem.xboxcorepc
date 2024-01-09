@@ -12,7 +12,7 @@
   "api/Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.html": {
     "href": "api/Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.html",
     "title": "Class XboxPCCloudSaveProvider | |",
-    "keywords": "Class XboxPCCloudSaveProvider Namespace Studio23.SS2.SaveSystem.XboxCorePc.Core public class XboxPCCloudSaveProvider : AbstractCloudSaveProvider Inheritance object XboxPCCloudSaveProvider Methods DownloadFromCloud(string, string) protected override void DownloadFromCloud(string key, string downloadLocation) Parameters key string downloadLocation string Initialize() protected override void Initialize() UploadToCloud(string, string) protected override void UploadToCloud(string key, string filepath) Parameters key string filepath string"
+    "keywords": "Class XboxPCCloudSaveProvider Namespace Studio23.SS2.SaveSystem.XboxCorePc.Core public class XboxPCCloudSaveProvider : AbstractCloudSaveProvider Inheritance object XboxPCCloudSaveProvider Methods DownloadFromCloud(string) protected override UniTask<byte[]> DownloadFromCloud(string key) Parameters key string Returns UniTask<byte[]> Initialize() protected override UniTask<int> Initialize() Returns UniTask<int> UploadToCloud(string, byte[]) protected override UniTask<int> UploadToCloud(string key, byte[] data) Parameters key string data byte[] Returns UniTask<int>"
   },
   "api/Studio23.SS2.SaveSystem.XboxCorePc.Core.html": {
     "href": "api/Studio23.SS2.SaveSystem.XboxCorePc.Core.html",
@@ -1912,7 +1912,7 @@
   "changelog/CHANGELOG.html": {
     "href": "changelog/CHANGELOG.html",
     "title": "| |",
-    "keywords": ""
+    "keywords": "[0.1.0](2024-01 -09) Feature Update to async function"
   },
   "index.html": {
     "href": "index.html",

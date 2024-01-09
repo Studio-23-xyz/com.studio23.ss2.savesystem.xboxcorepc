@@ -200,15 +200,15 @@ references:
   commentId: T:Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider
   fullName: Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider
   nameWithType: XboxPCCloudSaveProvider
-- uid: Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.DownloadFromCloud(System.String,System.String)
-  name: DownloadFromCloud(string, string)
-  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.html#Studio23_SS2_SaveSystem_XboxCorePc_Core_XboxPCCloudSaveProvider_DownloadFromCloud_System_String_System_String_
-  commentId: M:Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.DownloadFromCloud(System.String,System.String)
-  name.vb: DownloadFromCloud(String, String)
-  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.DownloadFromCloud(string, string)
-  fullName.vb: Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.DownloadFromCloud(String, String)
-  nameWithType: XboxPCCloudSaveProvider.DownloadFromCloud(string, string)
-  nameWithType.vb: XboxPCCloudSaveProvider.DownloadFromCloud(String, String)
+- uid: Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.DownloadFromCloud(System.String)
+  name: DownloadFromCloud(string)
+  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.html#Studio23_SS2_SaveSystem_XboxCorePc_Core_XboxPCCloudSaveProvider_DownloadFromCloud_System_String_
+  commentId: M:Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.DownloadFromCloud(System.String)
+  name.vb: DownloadFromCloud(String)
+  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.DownloadFromCloud(string)
+  fullName.vb: Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.DownloadFromCloud(String)
+  nameWithType: XboxPCCloudSaveProvider.DownloadFromCloud(string)
+  nameWithType.vb: XboxPCCloudSaveProvider.DownloadFromCloud(String)
 - uid: Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.DownloadFromCloud*
   name: DownloadFromCloud
   href: api/Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.html#Studio23_SS2_SaveSystem_XboxCorePc_Core_XboxPCCloudSaveProvider_DownloadFromCloud_
@@ -229,15 +229,15 @@ references:
   isSpec: "True"
   fullName: Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.Initialize
   nameWithType: XboxPCCloudSaveProvider.Initialize
-- uid: Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.UploadToCloud(System.String,System.String)
-  name: UploadToCloud(string, string)
-  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.html#Studio23_SS2_SaveSystem_XboxCorePc_Core_XboxPCCloudSaveProvider_UploadToCloud_System_String_System_String_
-  commentId: M:Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.UploadToCloud(System.String,System.String)
-  name.vb: UploadToCloud(String, String)
-  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.UploadToCloud(string, string)
-  fullName.vb: Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.UploadToCloud(String, String)
-  nameWithType: XboxPCCloudSaveProvider.UploadToCloud(string, string)
-  nameWithType.vb: XboxPCCloudSaveProvider.UploadToCloud(String, String)
+- uid: Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.UploadToCloud(System.String,System.Byte[])
+  name: UploadToCloud(string, byte[])
+  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.html#Studio23_SS2_SaveSystem_XboxCorePc_Core_XboxPCCloudSaveProvider_UploadToCloud_System_String_System_Byte___
+  commentId: M:Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.UploadToCloud(System.String,System.Byte[])
+  name.vb: UploadToCloud(String, Byte())
+  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.UploadToCloud(string, byte[])
+  fullName.vb: Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.UploadToCloud(String, Byte())
+  nameWithType: XboxPCCloudSaveProvider.UploadToCloud(string, byte[])
+  nameWithType.vb: XboxPCCloudSaveProvider.UploadToCloud(String, Byte())
 - uid: Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.UploadToCloud*
   name: UploadToCloud
   href: api/Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.html#Studio23_SS2_SaveSystem_XboxCorePc_Core_XboxPCCloudSaveProvider_UploadToCloud_
