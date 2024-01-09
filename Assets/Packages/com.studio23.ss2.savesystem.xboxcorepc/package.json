@@ -1,6 +1,6 @@
 {
   "name": "com.studio23.ss2.savesystem.xboxcorepc",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "displayName": "CloudSave.XboxCorePc",
   "description": "This package is for saving data in xbox core pc",
   "unity": "2022.3",
