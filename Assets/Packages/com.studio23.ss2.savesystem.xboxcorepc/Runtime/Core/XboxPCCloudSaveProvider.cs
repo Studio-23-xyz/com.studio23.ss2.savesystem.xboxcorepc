@@ -42,7 +42,7 @@ namespace Studio23.SS2.SaveSystem.XboxCorePc.Core
 
         protected override async UniTask<int> UploadToCloud(string key, byte[] data)
         {
-            UniTaskCompletionSource<int> uploadedToCloud = new UniTaskCompletionSource<int>(); 
+            UniTaskCompletionSource<int> uploadedToCloudTaskCompletionSource = new UniTaskCompletionSource<int>(); 
             var containerName = $"{key}";
             var blobBufferName = $"{key}_blobBuffer";
             var displayName = $"{key}{DateTime.Now}";
@@ -54,9 +54,10 @@ namespace Studio23.SS2.SaveSystem.XboxCorePc.Core
             _saveManager.GetOrCreateContainer(containerName,
                 result =>
                 {
-                    uploadedToCloud.TrySetResult(result);
+                    uploadedToCloudTaskCompletionSource.TrySetResult(result);
                     if (HR.FAILED(result))
                     {
+                        Debug.Log($"Error when GetOrCreateContainer HResult 0x{result:x}");
                         return;
                     } 
                     _saveManager.SaveGame(displayName,
@@ -64,11 +65,11 @@ namespace Studio23.SS2.SaveSystem.XboxCorePc.Core
                         data,
                         result =>
                         {
-                            uploadedToCloud.TrySetResult(result);
+                            uploadedToCloudTaskCompletionSource.TrySetResult(result);
                         });
                 });
 
-            return await uploadedToCloud.Task;
+            return await uploadedToCloudTaskCompletionSource.Task;
         }
         protected override async UniTask<byte[]> DownloadFromCloud(string key)
         
@@ -86,14 +87,17 @@ namespace Studio23.SS2.SaveSystem.XboxCorePc.Core
                     getOrCreateContainerTaskCompletionSource.TrySetResult(result);
                     if (HR.FAILED(result))
                     {
+                        Debug.Log($"Error when GetOrCreateContainer HResult 0x{result:x}");
                         return;
                     } 
                     
                     _saveManager.LoadGame(blobBufferName, (hresult, blobs) =>
                     {
                         getOrCreateContainerTaskCompletionSource.TrySetResult(hresult);
+                        downloadBlobTaskCompletionSource.TrySetResult(Array.Empty<byte>());
                         if (HR.FAILED(result))
                         {
+                            Debug.Log($"Error when loading GameSave. HResult 0x{result:x}");
                             return;
                         } 
                         Debug.Log($"Loading data buffer successful. Name: {blobs[0].Info.Name} - Size: {blobs[0].Info.Size} bytes");
@@ -106,9 +110,5 @@ namespace Studio23.SS2.SaveSystem.XboxCorePc.Core
             
             return await downloadBlobTaskCompletionSource.Task;
         }
-
-       
-
-
     }
 }
