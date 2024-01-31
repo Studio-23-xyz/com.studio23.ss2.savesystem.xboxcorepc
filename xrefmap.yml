@@ -74,15 +74,6 @@ references:
   isSpec: "True"
   fullName: GameSave.GameSaveManager.Initialize
   nameWithType: GameSaveManager.Initialize
-- uid: GameSave.GameSaveManager.LoadGame(System.String,UnityAction{System.Int32,XGamingRuntime.XGameSaveBlob[]})
-  name: LoadGame(string, UnityAction<int, XGameSaveBlob[]>)
-  href: api/GameSave.GameSaveManager.html#GameSave_GameSaveManager_LoadGame_System_String_UnityAction_System_Int32_XGamingRuntime_XGameSaveBlob____
-  commentId: M:GameSave.GameSaveManager.LoadGame(System.String,UnityAction{System.Int32,XGamingRuntime.XGameSaveBlob[]})
-  name.vb: LoadGame(String, UnityAction(Of Integer, XGameSaveBlob()))
-  fullName: GameSave.GameSaveManager.LoadGame(string, UnityAction<int, XGamingRuntime.XGameSaveBlob[]>)
-  fullName.vb: GameSave.GameSaveManager.LoadGame(String, UnityAction(Of Integer, XGamingRuntime.XGameSaveBlob()))
-  nameWithType: GameSaveManager.LoadGame(string, UnityAction<int, XGameSaveBlob[]>)
-  nameWithType.vb: GameSaveManager.LoadGame(String, UnityAction(Of Integer, XGameSaveBlob()))
 - uid: GameSave.GameSaveManager.LoadGame(System.String[],UnityAction{System.Int32,XGamingRuntime.XGameSaveBlob[]})
   name: LoadGame(string[], UnityAction<int, XGameSaveBlob[]>)
   href: api/GameSave.GameSaveManager.html#GameSave_GameSaveManager_LoadGame_System_String___UnityAction_System_Int32_XGamingRuntime_XGameSaveBlob____
@@ -124,15 +115,6 @@ references:
   fullName.vb: GameSave.GameSaveManager.SaveGame(String, String, Byte(), UnityAction(Of Integer))
   nameWithType: GameSaveManager.SaveGame(string, string, byte[], UnityAction<int>)
   nameWithType.vb: GameSaveManager.SaveGame(String, String, Byte(), UnityAction(Of Integer))
-- uid: GameSave.GameSaveManager.SaveGame(System.String,System.String[],System.Collections.Generic.List{System.Byte[]},UnityAction{System.Int32})
-  name: SaveGame(string, string[], List<byte[]>, UnityAction<int>)
-  href: api/GameSave.GameSaveManager.html#GameSave_GameSaveManager_SaveGame_System_String_System_String___System_Collections_Generic_List_System_Byte____UnityAction_System_Int32__
-  commentId: M:GameSave.GameSaveManager.SaveGame(System.String,System.String[],System.Collections.Generic.List{System.Byte[]},UnityAction{System.Int32})
-  name.vb: SaveGame(String, String(), List(Of Byte()), UnityAction(Of Integer))
-  fullName: GameSave.GameSaveManager.SaveGame(string, string[], System.Collections.Generic.List<byte[]>, UnityAction<int>)
-  fullName.vb: GameSave.GameSaveManager.SaveGame(String, String(), System.Collections.Generic.List(Of Byte()), UnityAction(Of Integer))
-  nameWithType: GameSaveManager.SaveGame(string, string[], List<byte[]>, UnityAction<int>)
-  nameWithType.vb: GameSaveManager.SaveGame(String, String(), List(Of Byte()), UnityAction(Of Integer))
 - uid: GameSave.GameSaveManager.SaveGame*
   name: SaveGame
   href: api/GameSave.GameSaveManager.html#GameSave_GameSaveManager_SaveGame_
@@ -188,63 +170,387 @@ references:
   isSpec: "True"
   fullName: GameSave.GameSaveManager.SubmitGameSaveUpdate
   nameWithType: GameSaveManager.SubmitGameSaveUpdate
-- uid: Studio23.SS2.SaveSystem.XboxCorePc.Core
-  name: Studio23.SS2.SaveSystem.XboxCorePc.Core
-  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Core.html
-  commentId: N:Studio23.SS2.SaveSystem.XboxCorePc.Core
-  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Core
-  nameWithType: Studio23.SS2.SaveSystem.XboxCorePc.Core
-- uid: Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider
+- uid: Global
+  name: ''
+  href: api/Global.html
+- uid: Global.ItemData
+  name: ItemData
+  href: api/Global.ItemData.html
+  commentId: T:Global.ItemData
+  fullName: ItemData
+  nameWithType: ItemData
+- uid: Global.ItemData.itemName
+  name: itemName
+  href: api/Global.ItemData.html#Global_ItemData_itemName
+  commentId: F:Global.ItemData.itemName
+  fullName: ItemData.itemName
+  nameWithType: ItemData.itemName
+- uid: Global.ItemData.itemQuantity
+  name: itemQuantity
+  href: api/Global.ItemData.html#Global_ItemData_itemQuantity
+  commentId: F:Global.ItemData.itemQuantity
+  fullName: ItemData.itemQuantity
+  nameWithType: ItemData.itemQuantity
+- uid: Global.ItemDataBehaviour
+  name: ItemDataBehaviour
+  href: api/Global.ItemDataBehaviour.html
+  commentId: T:Global.ItemDataBehaviour
+  fullName: ItemDataBehaviour
+  nameWithType: ItemDataBehaviour
+- uid: Global.ItemDataBehaviour.AssignSerializedData(System.String)
+  name: AssignSerializedData(string)
+  href: api/Global.ItemDataBehaviour.html#Global_ItemDataBehaviour_AssignSerializedData_System_String_
+  commentId: M:Global.ItemDataBehaviour.AssignSerializedData(System.String)
+  name.vb: AssignSerializedData(String)
+  fullName: ItemDataBehaviour.AssignSerializedData(string)
+  fullName.vb: ItemDataBehaviour.AssignSerializedData(String)
+  nameWithType: ItemDataBehaviour.AssignSerializedData(string)
+  nameWithType.vb: ItemDataBehaviour.AssignSerializedData(String)
+- uid: Global.ItemDataBehaviour.AssignSerializedData*
+  name: AssignSerializedData
+  href: api/Global.ItemDataBehaviour.html#Global_ItemDataBehaviour_AssignSerializedData_
+  commentId: Overload:Global.ItemDataBehaviour.AssignSerializedData
+  isSpec: "True"
+  fullName: ItemDataBehaviour.AssignSerializedData
+  nameWithType: ItemDataBehaviour.AssignSerializedData
+- uid: Global.ItemDataBehaviour.GetSerializedData
+  name: GetSerializedData()
+  href: api/Global.ItemDataBehaviour.html#Global_ItemDataBehaviour_GetSerializedData
+  commentId: M:Global.ItemDataBehaviour.GetSerializedData
+  fullName: ItemDataBehaviour.GetSerializedData()
+  nameWithType: ItemDataBehaviour.GetSerializedData()
+- uid: Global.ItemDataBehaviour.GetSerializedData*
+  name: GetSerializedData
+  href: api/Global.ItemDataBehaviour.html#Global_ItemDataBehaviour_GetSerializedData_
+  commentId: Overload:Global.ItemDataBehaviour.GetSerializedData
+  isSpec: "True"
+  fullName: ItemDataBehaviour.GetSerializedData
+  nameWithType: ItemDataBehaviour.GetSerializedData
+- uid: Global.ItemDataBehaviour.GetUniqueID
+  name: GetUniqueID()
+  href: api/Global.ItemDataBehaviour.html#Global_ItemDataBehaviour_GetUniqueID
+  commentId: M:Global.ItemDataBehaviour.GetUniqueID
+  fullName: ItemDataBehaviour.GetUniqueID()
+  nameWithType: ItemDataBehaviour.GetUniqueID()
+- uid: Global.ItemDataBehaviour.GetUniqueID*
+  name: GetUniqueID
+  href: api/Global.ItemDataBehaviour.html#Global_ItemDataBehaviour_GetUniqueID_
+  commentId: Overload:Global.ItemDataBehaviour.GetUniqueID
+  isSpec: "True"
+  fullName: ItemDataBehaviour.GetUniqueID
+  nameWithType: ItemDataBehaviour.GetUniqueID
+- uid: Global.ItemDataBehaviour.IsDirty
+  name: IsDirty
+  href: api/Global.ItemDataBehaviour.html#Global_ItemDataBehaviour_IsDirty
+  commentId: P:Global.ItemDataBehaviour.IsDirty
+  fullName: ItemDataBehaviour.IsDirty
+  nameWithType: ItemDataBehaviour.IsDirty
+- uid: Global.ItemDataBehaviour.IsDirty*
+  name: IsDirty
+  href: api/Global.ItemDataBehaviour.html#Global_ItemDataBehaviour_IsDirty_
+  commentId: Overload:Global.ItemDataBehaviour.IsDirty
+  isSpec: "True"
+  fullName: ItemDataBehaviour.IsDirty
+  nameWithType: ItemDataBehaviour.IsDirty
+- uid: Global.ItemDataBehaviour.itemData
+  name: itemData
+  href: api/Global.ItemDataBehaviour.html#Global_ItemDataBehaviour_itemData
+  commentId: F:Global.ItemDataBehaviour.itemData
+  fullName: ItemDataBehaviour.itemData
+  nameWithType: ItemDataBehaviour.itemData
+- uid: Global.PlayerData
+  name: PlayerData
+  href: api/Global.PlayerData.html
+  commentId: T:Global.PlayerData
+  fullName: PlayerData
+  nameWithType: PlayerData
+- uid: Global.PlayerData.playerLevel
+  name: playerLevel
+  href: api/Global.PlayerData.html#Global_PlayerData_playerLevel
+  commentId: F:Global.PlayerData.playerLevel
+  fullName: PlayerData.playerLevel
+  nameWithType: PlayerData.playerLevel
+- uid: Global.PlayerData.playerName
+  name: playerName
+  href: api/Global.PlayerData.html#Global_PlayerData_playerName
+  commentId: F:Global.PlayerData.playerName
+  fullName: PlayerData.playerName
+  nameWithType: PlayerData.playerName
+- uid: Global.PlayerDataBehaviour
+  name: PlayerDataBehaviour
+  href: api/Global.PlayerDataBehaviour.html
+  commentId: T:Global.PlayerDataBehaviour
+  fullName: PlayerDataBehaviour
+  nameWithType: PlayerDataBehaviour
+- uid: Global.PlayerDataBehaviour.AssignSerializedData(System.String)
+  name: AssignSerializedData(string)
+  href: api/Global.PlayerDataBehaviour.html#Global_PlayerDataBehaviour_AssignSerializedData_System_String_
+  commentId: M:Global.PlayerDataBehaviour.AssignSerializedData(System.String)
+  name.vb: AssignSerializedData(String)
+  fullName: PlayerDataBehaviour.AssignSerializedData(string)
+  fullName.vb: PlayerDataBehaviour.AssignSerializedData(String)
+  nameWithType: PlayerDataBehaviour.AssignSerializedData(string)
+  nameWithType.vb: PlayerDataBehaviour.AssignSerializedData(String)
+- uid: Global.PlayerDataBehaviour.AssignSerializedData*
+  name: AssignSerializedData
+  href: api/Global.PlayerDataBehaviour.html#Global_PlayerDataBehaviour_AssignSerializedData_
+  commentId: Overload:Global.PlayerDataBehaviour.AssignSerializedData
+  isSpec: "True"
+  fullName: PlayerDataBehaviour.AssignSerializedData
+  nameWithType: PlayerDataBehaviour.AssignSerializedData
+- uid: Global.PlayerDataBehaviour.GetSerializedData
+  name: GetSerializedData()
+  href: api/Global.PlayerDataBehaviour.html#Global_PlayerDataBehaviour_GetSerializedData
+  commentId: M:Global.PlayerDataBehaviour.GetSerializedData
+  fullName: PlayerDataBehaviour.GetSerializedData()
+  nameWithType: PlayerDataBehaviour.GetSerializedData()
+- uid: Global.PlayerDataBehaviour.GetSerializedData*
+  name: GetSerializedData
+  href: api/Global.PlayerDataBehaviour.html#Global_PlayerDataBehaviour_GetSerializedData_
+  commentId: Overload:Global.PlayerDataBehaviour.GetSerializedData
+  isSpec: "True"
+  fullName: PlayerDataBehaviour.GetSerializedData
+  nameWithType: PlayerDataBehaviour.GetSerializedData
+- uid: Global.PlayerDataBehaviour.GetUniqueID
+  name: GetUniqueID()
+  href: api/Global.PlayerDataBehaviour.html#Global_PlayerDataBehaviour_GetUniqueID
+  commentId: M:Global.PlayerDataBehaviour.GetUniqueID
+  fullName: PlayerDataBehaviour.GetUniqueID()
+  nameWithType: PlayerDataBehaviour.GetUniqueID()
+- uid: Global.PlayerDataBehaviour.GetUniqueID*
+  name: GetUniqueID
+  href: api/Global.PlayerDataBehaviour.html#Global_PlayerDataBehaviour_GetUniqueID_
+  commentId: Overload:Global.PlayerDataBehaviour.GetUniqueID
+  isSpec: "True"
+  fullName: PlayerDataBehaviour.GetUniqueID
+  nameWithType: PlayerDataBehaviour.GetUniqueID
+- uid: Global.PlayerDataBehaviour.IsDirty
+  name: IsDirty
+  href: api/Global.PlayerDataBehaviour.html#Global_PlayerDataBehaviour_IsDirty
+  commentId: P:Global.PlayerDataBehaviour.IsDirty
+  fullName: PlayerDataBehaviour.IsDirty
+  nameWithType: PlayerDataBehaviour.IsDirty
+- uid: Global.PlayerDataBehaviour.IsDirty*
+  name: IsDirty
+  href: api/Global.PlayerDataBehaviour.html#Global_PlayerDataBehaviour_IsDirty_
+  commentId: Overload:Global.PlayerDataBehaviour.IsDirty
+  isSpec: "True"
+  fullName: PlayerDataBehaviour.IsDirty
+  nameWithType: PlayerDataBehaviour.IsDirty
+- uid: Global.PlayerDataBehaviour._uniqueID
+  name: _uniqueID
+  href: api/Global.PlayerDataBehaviour.html#Global_PlayerDataBehaviour__uniqueID
+  commentId: F:Global.PlayerDataBehaviour._uniqueID
+  fullName: PlayerDataBehaviour._uniqueID
+  nameWithType: PlayerDataBehaviour._uniqueID
+- uid: Global.PlayerDataBehaviour.playerData
+  name: playerData
+  href: api/Global.PlayerDataBehaviour.html#Global_PlayerDataBehaviour_playerData
+  commentId: F:Global.PlayerDataBehaviour.playerData
+  fullName: PlayerDataBehaviour.playerData
+  nameWithType: PlayerDataBehaviour.playerData
+- uid: Studio23.SS2.CloudSave.Editor
+  name: Studio23.SS2.CloudSave.Editor
+  href: api/Studio23.SS2.CloudSave.Editor.html
+  commentId: N:Studio23.SS2.CloudSave.Editor
+  fullName: Studio23.SS2.CloudSave.Editor
+  nameWithType: Studio23.SS2.CloudSave.Editor
+- uid: Studio23.SS2.CloudSave.Editor.XBoxPCProviderPCEditor
+  name: XBoxPCProviderPCEditor
+  href: api/Studio23.SS2.CloudSave.Editor.XBoxPCProviderPCEditor.html
+  commentId: T:Studio23.SS2.CloudSave.Editor.XBoxPCProviderPCEditor
+  fullName: Studio23.SS2.CloudSave.Editor.XBoxPCProviderPCEditor
+  nameWithType: XBoxPCProviderPCEditor
+- uid: Studio23.SS2.SaveSystem.XboxCorePc.Data
+  name: Studio23.SS2.SaveSystem.XboxCorePc.Data
+  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Data.html
+  commentId: N:Studio23.SS2.SaveSystem.XboxCorePc.Data
+  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Data
+  nameWithType: Studio23.SS2.SaveSystem.XboxCorePc.Data
+- uid: Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider
   name: XboxPCCloudSaveProvider
-  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.html
-  commentId: T:Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider
-  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider
+  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.html
+  commentId: T:Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider
+  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider
   nameWithType: XboxPCCloudSaveProvider
-- uid: Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.DownloadFromCloud(System.String)
-  name: DownloadFromCloud(string)
-  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.html#Studio23_SS2_SaveSystem_XboxCorePc_Core_XboxPCCloudSaveProvider_DownloadFromCloud_System_String_
-  commentId: M:Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.DownloadFromCloud(System.String)
-  name.vb: DownloadFromCloud(String)
-  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.DownloadFromCloud(string)
-  fullName.vb: Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.DownloadFromCloud(String)
-  nameWithType: XboxPCCloudSaveProvider.DownloadFromCloud(string)
-  nameWithType.vb: XboxPCCloudSaveProvider.DownloadFromCloud(String)
-- uid: Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.DownloadFromCloud*
+- uid: Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.DeleteSlotFromCloud(System.String)
+  name: DeleteSlotFromCloud(string)
+  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.html#Studio23_SS2_SaveSystem_XboxCorePc_Data_XboxPCCloudSaveProvider_DeleteSlotFromCloud_System_String_
+  commentId: M:Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.DeleteSlotFromCloud(System.String)
+  name.vb: DeleteSlotFromCloud(String)
+  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.DeleteSlotFromCloud(string)
+  fullName.vb: Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.DeleteSlotFromCloud(String)
+  nameWithType: XboxPCCloudSaveProvider.DeleteSlotFromCloud(string)
+  nameWithType.vb: XboxPCCloudSaveProvider.DeleteSlotFromCloud(String)
+- uid: Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.DeleteSlotFromCloud*
+  name: DeleteSlotFromCloud
+  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.html#Studio23_SS2_SaveSystem_XboxCorePc_Data_XboxPCCloudSaveProvider_DeleteSlotFromCloud_
+  commentId: Overload:Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.DeleteSlotFromCloud
+  isSpec: "True"
+  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.DeleteSlotFromCloud
+  nameWithType: XboxPCCloudSaveProvider.DeleteSlotFromCloud
+- uid: Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.DownloadFromCloud(System.String,System.String)
+  name: DownloadFromCloud(string, string)
+  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.html#Studio23_SS2_SaveSystem_XboxCorePc_Data_XboxPCCloudSaveProvider_DownloadFromCloud_System_String_System_String_
+  commentId: M:Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.DownloadFromCloud(System.String,System.String)
+  name.vb: DownloadFromCloud(String, String)
+  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.DownloadFromCloud(string, string)
+  fullName.vb: Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.DownloadFromCloud(String, String)
+  nameWithType: XboxPCCloudSaveProvider.DownloadFromCloud(string, string)
+  nameWithType.vb: XboxPCCloudSaveProvider.DownloadFromCloud(String, String)
+- uid: Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.DownloadFromCloud(System.String,System.String[])
+  name: DownloadFromCloud(string, string[])
+  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.html#Studio23_SS2_SaveSystem_XboxCorePc_Data_XboxPCCloudSaveProvider_DownloadFromCloud_System_String_System_String___
+  commentId: M:Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.DownloadFromCloud(System.String,System.String[])
+  name.vb: DownloadFromCloud(String, String())
+  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.DownloadFromCloud(string, string[])
+  fullName.vb: Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.DownloadFromCloud(String, String())
+  nameWithType: XboxPCCloudSaveProvider.DownloadFromCloud(string, string[])
+  nameWithType.vb: XboxPCCloudSaveProvider.DownloadFromCloud(String, String())
+- uid: Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.DownloadFromCloud*
   name: DownloadFromCloud
-  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.html#Studio23_SS2_SaveSystem_XboxCorePc_Core_XboxPCCloudSaveProvider_DownloadFromCloud_
-  commentId: Overload:Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.DownloadFromCloud
+  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.html#Studio23_SS2_SaveSystem_XboxCorePc_Data_XboxPCCloudSaveProvider_DownloadFromCloud_
+  commentId: Overload:Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.DownloadFromCloud
   isSpec: "True"
-  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.DownloadFromCloud
+  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.DownloadFromCloud
   nameWithType: XboxPCCloudSaveProvider.DownloadFromCloud
-- uid: Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.Initialize
+- uid: Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.Initialize
   name: Initialize()
-  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.html#Studio23_SS2_SaveSystem_XboxCorePc_Core_XboxPCCloudSaveProvider_Initialize
-  commentId: M:Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.Initialize
-  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.Initialize()
+  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.html#Studio23_SS2_SaveSystem_XboxCorePc_Data_XboxPCCloudSaveProvider_Initialize
+  commentId: M:Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.Initialize
+  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.Initialize()
   nameWithType: XboxPCCloudSaveProvider.Initialize()
-- uid: Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.Initialize*
+- uid: Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.Initialize*
   name: Initialize
-  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.html#Studio23_SS2_SaveSystem_XboxCorePc_Core_XboxPCCloudSaveProvider_Initialize_
-  commentId: Overload:Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.Initialize
+  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.html#Studio23_SS2_SaveSystem_XboxCorePc_Data_XboxPCCloudSaveProvider_Initialize_
+  commentId: Overload:Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.Initialize
   isSpec: "True"
-  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.Initialize
+  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.Initialize
   nameWithType: XboxPCCloudSaveProvider.Initialize
-- uid: Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.UploadToCloud(System.String,System.Byte[])
-  name: UploadToCloud(string, byte[])
-  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.html#Studio23_SS2_SaveSystem_XboxCorePc_Core_XboxPCCloudSaveProvider_UploadToCloud_System_String_System_Byte___
-  commentId: M:Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.UploadToCloud(System.String,System.Byte[])
-  name.vb: UploadToCloud(String, Byte())
-  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.UploadToCloud(string, byte[])
-  fullName.vb: Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.UploadToCloud(String, Byte())
-  nameWithType: XboxPCCloudSaveProvider.UploadToCloud(string, byte[])
-  nameWithType.vb: XboxPCCloudSaveProvider.UploadToCloud(String, Byte())
-- uid: Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.UploadToCloud*
+- uid: Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.UploadToCloud(System.String,System.String,System.Byte[])
+  name: UploadToCloud(string, string, byte[])
+  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.html#Studio23_SS2_SaveSystem_XboxCorePc_Data_XboxPCCloudSaveProvider_UploadToCloud_System_String_System_String_System_Byte___
+  commentId: M:Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.UploadToCloud(System.String,System.String,System.Byte[])
+  name.vb: UploadToCloud(String, String, Byte())
+  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.UploadToCloud(string, string, byte[])
+  fullName.vb: Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.UploadToCloud(String, String, Byte())
+  nameWithType: XboxPCCloudSaveProvider.UploadToCloud(string, string, byte[])
+  nameWithType.vb: XboxPCCloudSaveProvider.UploadToCloud(String, String, Byte())
+- uid: Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.UploadToCloud*
   name: UploadToCloud
-  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.html#Studio23_SS2_SaveSystem_XboxCorePc_Core_XboxPCCloudSaveProvider_UploadToCloud_
-  commentId: Overload:Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.UploadToCloud
+  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.html#Studio23_SS2_SaveSystem_XboxCorePc_Data_XboxPCCloudSaveProvider_UploadToCloud_
+  commentId: Overload:Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.UploadToCloud
   isSpec: "True"
-  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.UploadToCloud
+  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.UploadToCloud
   nameWithType: XboxPCCloudSaveProvider.UploadToCloud
+- uid: Studio23.SS2.SaveSystem.XboxCorePc.Helpers
+  name: Studio23.SS2.SaveSystem.XboxCorePc.Helpers
+  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Helpers.html
+  commentId: N:Studio23.SS2.SaveSystem.XboxCorePc.Helpers
+  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Helpers
+  nameWithType: Studio23.SS2.SaveSystem.XboxCorePc.Helpers
+- uid: Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes
+  name: XSaveErrorCodes
+  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.html
+  commentId: T:Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes
+  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes
+  nameWithType: XSaveErrorCodes
+- uid: Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_ASYNC_FUNCTION_REQUIRED
+  name: E_GS_ASYNC_FUNCTION_REQUIRED
+  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.html#Studio23_SS2_SaveSystem_XboxCorePc_Helpers_XSaveErrorCodes_E_GS_ASYNC_FUNCTION_REQUIRED
+  commentId: F:Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_ASYNC_FUNCTION_REQUIRED
+  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_ASYNC_FUNCTION_REQUIRED
+  nameWithType: XSaveErrorCodes.E_GS_ASYNC_FUNCTION_REQUIRED
+- uid: Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_BLOB_NOT_FOUND
+  name: E_GS_BLOB_NOT_FOUND
+  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.html#Studio23_SS2_SaveSystem_XboxCorePc_Helpers_XSaveErrorCodes_E_GS_BLOB_NOT_FOUND
+  commentId: F:Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_BLOB_NOT_FOUND
+  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_BLOB_NOT_FOUND
+  nameWithType: XSaveErrorCodes.E_GS_BLOB_NOT_FOUND
+- uid: Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_CONTAINER_NOT_IN_SYNC
+  name: E_GS_CONTAINER_NOT_IN_SYNC
+  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.html#Studio23_SS2_SaveSystem_XboxCorePc_Helpers_XSaveErrorCodes_E_GS_CONTAINER_NOT_IN_SYNC
+  commentId: F:Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_CONTAINER_NOT_IN_SYNC
+  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_CONTAINER_NOT_IN_SYNC
+  nameWithType: XSaveErrorCodes.E_GS_CONTAINER_NOT_IN_SYNC
+- uid: Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_CONTAINER_SYNC_FAILED
+  name: E_GS_CONTAINER_SYNC_FAILED
+  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.html#Studio23_SS2_SaveSystem_XboxCorePc_Helpers_XSaveErrorCodes_E_GS_CONTAINER_SYNC_FAILED
+  commentId: F:Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_CONTAINER_SYNC_FAILED
+  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_CONTAINER_SYNC_FAILED
+  nameWithType: XSaveErrorCodes.E_GS_CONTAINER_SYNC_FAILED
+- uid: Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_HANDLE_EXPIRED
+  name: E_GS_HANDLE_EXPIRED
+  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.html#Studio23_SS2_SaveSystem_XboxCorePc_Helpers_XSaveErrorCodes_E_GS_HANDLE_EXPIRED
+  commentId: F:Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_HANDLE_EXPIRED
+  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_HANDLE_EXPIRED
+  nameWithType: XSaveErrorCodes.E_GS_HANDLE_EXPIRED
+- uid: Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_INVALID_CONTAINER_NAME
+  name: E_GS_INVALID_CONTAINER_NAME
+  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.html#Studio23_SS2_SaveSystem_XboxCorePc_Helpers_XSaveErrorCodes_E_GS_INVALID_CONTAINER_NAME
+  commentId: F:Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_INVALID_CONTAINER_NAME
+  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_INVALID_CONTAINER_NAME
+  nameWithType: XSaveErrorCodes.E_GS_INVALID_CONTAINER_NAME
+- uid: Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_NO_ACCESS
+  name: E_GS_NO_ACCESS
+  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.html#Studio23_SS2_SaveSystem_XboxCorePc_Helpers_XSaveErrorCodes_E_GS_NO_ACCESS
+  commentId: F:Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_NO_ACCESS
+  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_NO_ACCESS
+  nameWithType: XSaveErrorCodes.E_GS_NO_ACCESS
+- uid: Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_NO_SERVICE_CONFIGURATION
+  name: E_GS_NO_SERVICE_CONFIGURATION
+  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.html#Studio23_SS2_SaveSystem_XboxCorePc_Helpers_XSaveErrorCodes_E_GS_NO_SERVICE_CONFIGURATION
+  commentId: F:Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_NO_SERVICE_CONFIGURATION
+  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_NO_SERVICE_CONFIGURATION
+  nameWithType: XSaveErrorCodes.E_GS_NO_SERVICE_CONFIGURATION
+- uid: Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_OUT_OF_LOCAL_STORAGE
+  name: E_GS_OUT_OF_LOCAL_STORAGE
+  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.html#Studio23_SS2_SaveSystem_XboxCorePc_Helpers_XSaveErrorCodes_E_GS_OUT_OF_LOCAL_STORAGE
+  commentId: F:Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_OUT_OF_LOCAL_STORAGE
+  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_OUT_OF_LOCAL_STORAGE
+  nameWithType: XSaveErrorCodes.E_GS_OUT_OF_LOCAL_STORAGE
+- uid: Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_PROVIDED_BUFFER_TOO_SMALL
+  name: E_GS_PROVIDED_BUFFER_TOO_SMALL
+  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.html#Studio23_SS2_SaveSystem_XboxCorePc_Helpers_XSaveErrorCodes_E_GS_PROVIDED_BUFFER_TOO_SMALL
+  commentId: F:Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_PROVIDED_BUFFER_TOO_SMALL
+  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_PROVIDED_BUFFER_TOO_SMALL
+  nameWithType: XSaveErrorCodes.E_GS_PROVIDED_BUFFER_TOO_SMALL
+- uid: Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_PROVIDER_MISMATCH
+  name: E_GS_PROVIDER_MISMATCH
+  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.html#Studio23_SS2_SaveSystem_XboxCorePc_Helpers_XSaveErrorCodes_E_GS_PROVIDER_MISMATCH
+  commentId: F:Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_PROVIDER_MISMATCH
+  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_PROVIDER_MISMATCH
+  nameWithType: XSaveErrorCodes.E_GS_PROVIDER_MISMATCH
+- uid: Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_QUOTA_EXCEEDED
+  name: E_GS_QUOTA_EXCEEDED
+  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.html#Studio23_SS2_SaveSystem_XboxCorePc_Helpers_XSaveErrorCodes_E_GS_QUOTA_EXCEEDED
+  commentId: F:Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_QUOTA_EXCEEDED
+  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_QUOTA_EXCEEDED
+  nameWithType: XSaveErrorCodes.E_GS_QUOTA_EXCEEDED
+- uid: Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_TERMINATEDTITLE_STALE_DATA
+  name: E_GS_TERMINATEDTITLE_STALE_DATA
+  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.html#Studio23_SS2_SaveSystem_XboxCorePc_Helpers_XSaveErrorCodes_E_GS_TERMINATEDTITLE_STALE_DATA
+  commentId: F:Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_TERMINATEDTITLE_STALE_DATA
+  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_TERMINATEDTITLE_STALE_DATA
+  nameWithType: XSaveErrorCodes.E_GS_TERMINATEDTITLE_STALE_DATA
+- uid: Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_UPDATE_TOO_BIG
+  name: E_GS_UPDATE_TOO_BIG
+  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.html#Studio23_SS2_SaveSystem_XboxCorePc_Helpers_XSaveErrorCodes_E_GS_UPDATE_TOO_BIG
+  commentId: F:Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_UPDATE_TOO_BIG
+  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_UPDATE_TOO_BIG
+  nameWithType: XSaveErrorCodes.E_GS_UPDATE_TOO_BIG
+- uid: Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_USER_CANCELED
+  name: E_GS_USER_CANCELED
+  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.html#Studio23_SS2_SaveSystem_XboxCorePc_Helpers_XSaveErrorCodes_E_GS_USER_CANCELED
+  commentId: F:Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_USER_CANCELED
+  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_USER_CANCELED
+  nameWithType: XSaveErrorCodes.E_GS_USER_CANCELED
+- uid: Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_USER_NOT_REGISTERED_IN_SERVICE
+  name: E_GS_USER_NOT_REGISTERED_IN_SERVICE
+  href: api/Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.html#Studio23_SS2_SaveSystem_XboxCorePc_Helpers_XSaveErrorCodes_E_GS_USER_NOT_REGISTERED_IN_SERVICE
+  commentId: F:Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_USER_NOT_REGISTERED_IN_SERVICE
+  fullName: Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.E_GS_USER_NOT_REGISTERED_IN_SERVICE
+  nameWithType: XSaveErrorCodes.E_GS_USER_NOT_REGISTERED_IN_SERVICE
 - uid: XGamingRuntime
   name: XGamingRuntime
   href: api/XGamingRuntime.html

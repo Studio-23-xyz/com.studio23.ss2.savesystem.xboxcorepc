@@ -35,20 +35,110 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.yml",
+      "source_relative_path": "api/Global.ItemData.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.html"
+          "relative_path": "api/Global.ItemData.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Studio23.SS2.SaveSystem.XboxCorePc.Core.yml",
+      "source_relative_path": "api/Global.ItemDataBehaviour.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Studio23.SS2.SaveSystem.XboxCorePc.Core.html"
+          "relative_path": "api/Global.ItemDataBehaviour.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.PlayerData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.PlayerData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.PlayerDataBehaviour.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.PlayerDataBehaviour.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Studio23.SS2.CloudSave.Editor.XBoxPCProviderPCEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Studio23.SS2.CloudSave.Editor.XBoxPCProviderPCEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Studio23.SS2.CloudSave.Editor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Studio23.SS2.CloudSave.Editor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Studio23.SS2.SaveSystem.XboxCorePc.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Studio23.SS2.SaveSystem.XboxCorePc.Data.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Studio23.SS2.SaveSystem.XboxCorePc.Helpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Studio23.SS2.SaveSystem.XboxCorePc.Helpers.html"
         }
       },
       "version": ""
@@ -3837,11 +3927,11 @@
       "type": "Toc",
       "source_relative_path": "api/toc.yml",
       "output": {
-        ".json": {
-          "relative_path": "api/toc.json"
-        },
         ".html": {
           "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
         }
       },
       "version": ""
@@ -3860,11 +3950,11 @@
       "type": "Toc",
       "source_relative_path": "changelog/toc.md",
       "output": {
-        ".json": {
-          "relative_path": "changelog/toc.json"
-        },
         ".html": {
           "relative_path": "changelog/toc.html"
+        },
+        ".json": {
+          "relative_path": "changelog/toc.json"
         }
       },
       "version": ""
@@ -3893,11 +3983,11 @@
       "type": "Toc",
       "source_relative_path": "license/toc.md",
       "output": {
-        ".json": {
-          "relative_path": "license/toc.json"
-        },
         ".html": {
           "relative_path": "license/toc.html"
+        },
+        ".json": {
+          "relative_path": "license/toc.json"
         }
       },
       "version": ""
@@ -3916,11 +4006,11 @@
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
-        ".json": {
-          "relative_path": "toc.json"
-        },
         ".html": {
           "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
         }
       },
       "version": ""

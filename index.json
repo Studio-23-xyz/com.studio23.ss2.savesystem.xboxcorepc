@@ -2,22 +2,67 @@
   "api/GameSave.GameSaveManager.html": {
     "href": "api/GameSave.GameSaveManager.html",
     "title": "Class GameSaveManager | |",
-    "keywords": "Class GameSaveManager Namespace GameSave public class GameSaveManager Inheritance object GameSaveManager Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods CloseGameSaveHandles() public void CloseGameSaveHandles() DeleteContainer(string, UnityAction<int>) public void DeleteContainer(string containerName, UnityAction<int> onDeleteContainercomplete) Parameters containerName string onDeleteContainercomplete UnityAction<int> GetOrCreateContainer(string, UnityAction<int>) public void GetOrCreateContainer(string containerName, UnityAction<int> onContainerCreated) Parameters containerName string onContainerCreated UnityAction<int> Initialize(XUserHandle, string, bool, UnityAction<int>) public void Initialize(XUserHandle userHandle, string scid, bool syncOnDemand, UnityAction<int> onInitializationComplete) Parameters userHandle XUserHandle scid string syncOnDemand bool onInitializationComplete UnityAction<int> LoadGame(string, UnityAction<int, XGameSaveBlob[]>) public void LoadGame(string blobBufferName, UnityAction<int, XGameSaveBlob[]> onLoadGameCompleted) Parameters blobBufferName string onLoadGameCompleted UnityAction<int, XGameSaveBlob[]> LoadGame(string[], UnityAction<int, XGameSaveBlob[]>) public void LoadGame(string[] blobBufferNames, UnityAction<int, XGameSaveBlob[]> onLoadGameCompleted) Parameters blobBufferNames string[] onLoadGameCompleted UnityAction<int, XGameSaveBlob[]> QuerySpaceQuota(UnityAction<int, long>) public void QuerySpaceQuota(UnityAction<int, long> onSpaceQuotaRequested) Parameters onSpaceQuotaRequested UnityAction<int, long> SaveGame(string, string, byte[], UnityAction<int>) public void SaveGame(string displayName, string blobBufferName, byte[] blobData, UnityAction<int> onSaveGameCompleted) Parameters displayName string blobBufferName string blobData byte[] onSaveGameCompleted UnityAction<int> SaveGame(string, string[], List<byte[]>, UnityAction<int>) public void SaveGame(string displayName, string[] blobBufferNames, List<byte[]> blobDataList, UnityAction<int> onSaveGameCompleted) Parameters displayName string blobBufferNames string[] blobDataList List<byte[]> onSaveGameCompleted UnityAction<int> StartContainerUpdate(string) public int StartContainerUpdate(string containerDisplayName) Parameters containerDisplayName string Returns int SubmitDataBlobToWrite(string, byte[]) public int SubmitDataBlobToWrite(string blobName, byte[] data) Parameters blobName string data byte[] Returns int SubmitGameSaveUpdate(UnityAction<int>) public void SubmitGameSaveUpdate(UnityAction<int> onSubmitGameSaveComplete) Parameters onSubmitGameSaveComplete UnityAction<int>"
+    "keywords": "Class GameSaveManager Namespace GameSave public class GameSaveManager Inheritance object GameSaveManager Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods CloseGameSaveHandles() public void CloseGameSaveHandles() DeleteContainer(string, UnityAction<int>) public void DeleteContainer(string containerName, UnityAction<int> onDeleteContainercomplete) Parameters containerName string onDeleteContainercomplete UnityAction<int> GetOrCreateContainer(string, UnityAction<int>) public void GetOrCreateContainer(string containerName, UnityAction<int> onContainerCreated) Parameters containerName string onContainerCreated UnityAction<int> Initialize(XUserHandle, string, bool, UnityAction<int>) public void Initialize(XUserHandle userHandle, string scid, bool syncOnDemand, UnityAction<int> onInitializationComplete) Parameters userHandle XUserHandle scid string syncOnDemand bool onInitializationComplete UnityAction<int> LoadGame(string[], UnityAction<int, XGameSaveBlob[]>) public void LoadGame(string[] blobBufferNames, UnityAction<int, XGameSaveBlob[]> onLoadGameCompleted) Parameters blobBufferNames string[] onLoadGameCompleted UnityAction<int, XGameSaveBlob[]> QuerySpaceQuota(UnityAction<int, long>) public void QuerySpaceQuota(UnityAction<int, long> onSpaceQuotaRequested) Parameters onSpaceQuotaRequested UnityAction<int, long> SaveGame(string, string, byte[], UnityAction<int>) public void SaveGame(string displayName, string blobBufferName, byte[] blobData, UnityAction<int> onSaveGameCompleted) Parameters displayName string blobBufferName string blobData byte[] onSaveGameCompleted UnityAction<int> StartContainerUpdate(string) public int StartContainerUpdate(string containerDisplayName) Parameters containerDisplayName string Returns int SubmitDataBlobToWrite(string, byte[]) public int SubmitDataBlobToWrite(string blobName, byte[] data) Parameters blobName string data byte[] Returns int SubmitGameSaveUpdate(UnityAction<int>) public void SubmitGameSaveUpdate(UnityAction<int> onSubmitGameSaveComplete) Parameters onSubmitGameSaveComplete UnityAction<int>"
   },
   "api/GameSave.html": {
     "href": "api/GameSave.html",
     "title": "Namespace GameSave | |",
     "keywords": "Namespace GameSave Classes GameSaveManager"
   },
-  "api/Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.html": {
-    "href": "api/Studio23.SS2.SaveSystem.XboxCorePc.Core.XboxPCCloudSaveProvider.html",
-    "title": "Class XboxPCCloudSaveProvider | |",
-    "keywords": "Class XboxPCCloudSaveProvider Namespace Studio23.SS2.SaveSystem.XboxCorePc.Core public class XboxPCCloudSaveProvider : AbstractCloudSaveProvider Inheritance object XboxPCCloudSaveProvider Methods DownloadFromCloud(string) protected override UniTask<byte[]> DownloadFromCloud(string key) Parameters key string Returns UniTask<byte[]> Initialize() protected override UniTask<int> Initialize() Returns UniTask<int> UploadToCloud(string, byte[]) protected override UniTask<int> UploadToCloud(string key, byte[] data) Parameters key string data byte[] Returns UniTask<int>"
+  "api/Global.ItemData.html": {
+    "href": "api/Global.ItemData.html",
+    "title": "Class ItemData | |",
+    "keywords": "Class ItemData Namespace Global [Serializable] public class ItemData Inheritance object ItemData Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Fields itemName public string itemName Field Value string itemQuantity public int itemQuantity Field Value int"
   },
-  "api/Studio23.SS2.SaveSystem.XboxCorePc.Core.html": {
-    "href": "api/Studio23.SS2.SaveSystem.XboxCorePc.Core.html",
-    "title": "Namespace Studio23.SS2.SaveSystem.XboxCorePc.Core | |",
-    "keywords": "Namespace Studio23.SS2.SaveSystem.XboxCorePc.Core Classes XboxPCCloudSaveProvider"
+  "api/Global.ItemDataBehaviour.html": {
+    "href": "api/Global.ItemDataBehaviour.html",
+    "title": "Class ItemDataBehaviour | |",
+    "keywords": "Class ItemDataBehaviour Namespace Global public class ItemDataBehaviour : MonoBehaviour, ISaveable Inheritance object ItemDataBehaviour Implements ISaveable Fields itemData public ItemData itemData Field Value ItemData Properties IsDirty public bool IsDirty { get; set; } Property Value bool Methods AssignSerializedData(string) public void AssignSerializedData(string data) Parameters data string GetSerializedData() public string GetSerializedData() Returns string GetUniqueID() public string GetUniqueID() Returns string"
+  },
+  "api/Global.PlayerData.html": {
+    "href": "api/Global.PlayerData.html",
+    "title": "Class PlayerData | |",
+    "keywords": "Class PlayerData Namespace Global [Serializable] public class PlayerData Inheritance object PlayerData Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Fields playerLevel public int playerLevel Field Value int playerName public string playerName Field Value string"
+  },
+  "api/Global.PlayerDataBehaviour.html": {
+    "href": "api/Global.PlayerDataBehaviour.html",
+    "title": "Class PlayerDataBehaviour | |",
+    "keywords": "Class PlayerDataBehaviour Namespace Global public class PlayerDataBehaviour : MonoBehaviour, ISaveable Inheritance object PlayerDataBehaviour Implements ISaveable Fields _uniqueID public string _uniqueID Field Value string playerData public PlayerData playerData Field Value PlayerData Properties IsDirty public bool IsDirty { get; set; } Property Value bool Methods AssignSerializedData(string) public void AssignSerializedData(string data) Parameters data string GetSerializedData() public string GetSerializedData() Returns string GetUniqueID() public string GetUniqueID() Returns string"
+  },
+  "api/Global.html": {
+    "href": "api/Global.html",
+    "title": "Namespace | |",
+    "keywords": "Namespace Classes ItemData ItemDataBehaviour PlayerData PlayerDataBehaviour"
+  },
+  "api/Studio23.SS2.CloudSave.Editor.XBoxPCProviderPCEditor.html": {
+    "href": "api/Studio23.SS2.CloudSave.Editor.XBoxPCProviderPCEditor.html",
+    "title": "Class XBoxPCProviderPCEditor | |",
+    "keywords": "Class XBoxPCProviderPCEditor Namespace Studio23.SS2.CloudSave.Editor public class XBoxPCProviderPCEditor : EditorWindow Inheritance object XBoxPCProviderPCEditor"
+  },
+  "api/Studio23.SS2.CloudSave.Editor.html": {
+    "href": "api/Studio23.SS2.CloudSave.Editor.html",
+    "title": "Namespace Studio23.SS2.CloudSave.Editor | |",
+    "keywords": "Namespace Studio23.SS2.CloudSave.Editor Classes XBoxPCProviderPCEditor"
+  },
+  "api/Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.html": {
+    "href": "api/Studio23.SS2.SaveSystem.XboxCorePc.Data.XboxPCCloudSaveProvider.html",
+    "title": "Class XboxPCCloudSaveProvider | |",
+    "keywords": "Class XboxPCCloudSaveProvider Namespace Studio23.SS2.SaveSystem.XboxCorePc.Data public class XboxPCCloudSaveProvider : AbstractCloudSaveProvider Inheritance object XboxPCCloudSaveProvider Methods DeleteSlotFromCloud(string) protected override UniTask<int> DeleteSlotFromCloud(string slotName) Parameters slotName string Returns UniTask<int> DownloadFromCloud(string, string) protected override UniTask<byte[]> DownloadFromCloud(string slotName, string key) Parameters slotName string key string Returns UniTask<byte[]> DownloadFromCloud(string, string[]) protected override UniTask<Dictionary<string, byte[]>> DownloadFromCloud(string slotName, string[] keys) Parameters slotName string keys string[] Returns UniTask<Dictionary<string, byte[]>> Initialize() protected override UniTask<int> Initialize() Returns UniTask<int> UploadToCloud(string, string, byte[]) protected override UniTask<int> UploadToCloud(string slotName, string key, byte[] data) Parameters slotName string key string data byte[] Returns UniTask<int>"
+  },
+  "api/Studio23.SS2.SaveSystem.XboxCorePc.Data.html": {
+    "href": "api/Studio23.SS2.SaveSystem.XboxCorePc.Data.html",
+    "title": "Namespace Studio23.SS2.SaveSystem.XboxCorePc.Data | |",
+    "keywords": "Namespace Studio23.SS2.SaveSystem.XboxCorePc.Data Classes XboxPCCloudSaveProvider"
+  },
+  "api/Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.html": {
+    "href": "api/Studio23.SS2.SaveSystem.XboxCorePc.Helpers.XSaveErrorCodes.html",
+    "title": "Enum XSaveErrorCodes | |",
+    "keywords": "Enum XSaveErrorCodes Namespace Studio23.SS2.SaveSystem.XboxCorePc.Helpers public enum XSaveErrorCodes : uint Fields E_GS_ASYNC_FUNCTION_REQUIRED = 2156068878 The function is getting called on a time-sensitive thread. This can cause deadlocks in the game. The caller should use an asynchronous version of the API. For more information, see Time-sensitive threads. E_GS_BLOB_NOT_FOUND = 2156068872 The specified blob can't be found. E_GS_CONTAINER_NOT_IN_SYNC = 2156068874 The container is not yet synchronized. E_GS_CONTAINER_SYNC_FAILED = 2156068875 The synchronization of the container has failed. E_GS_HANDLE_EXPIRED = 2156068877 The handle used by the function has expired and should be reacquired. There are three handle types that are used by XGameSave: XGameSaveProviderHandle, XGameSaveContainerHandle, and XGameSaveUpdateHandle. The XGameSaveUpdateHandle can't be re-used after submitting an update. Additionally, the XGameSaveUpdateHandle is no longer valid after the game is suspended. E_GS_INVALID_CONTAINER_NAME = 2156068865 E_GS_NO_ACCESS = 2156068866 The Xbox services Configuration ID (SCID) is not configured correctly on the service. E_GS_NO_SERVICE_CONFIGURATION = 2156068873 The title is not properly configured for using connected storage. This is possibly because the SCID is wrong or because this isn't configured correctly in Partner Center. E_GS_OUT_OF_LOCAL_STORAGE = 2156068867 The device has run out of room for save games. Users will need to free up storage space on the device. This error can be hit even if the game's per user storage quota has not been exceeded. E_GS_PROVIDED_BUFFER_TOO_SMALL = 2156068871 The buffer provided to the API was too small. E_GS_PROVIDER_MISMATCH = 2156068879 The game is trying to mix and match the usage of XGameSave and XGameSaveFiles. This is not supported. Games much choose which cloud save system they want to use in their game. E_GS_QUOTA_EXCEEDED = 2156068870 The game has exceeded the per-user quota for the game. By default this quota is 256MB. Games can ask for an exception to make this larger. E_GS_TERMINATEDTITLE_STALE_DATA = 2156072961 This error is never returned to the title through any of the user-facing XGameSave APIs. Instead, developers may see this in their debug output at the time that their game is terminated. This error indicates that the title didn't have the connected storage lock at the time the game save provider was initialized. This could have happened for several reasons including being offline at that time or having the user choose to play offline when presented with a conflict dialog. As the game didn't have the connected storage lock, the OS will terminate the game and present this error when it goes to suspend so as to get the game into a good state for the next launch. E_GS_UPDATE_TOO_BIG = 2156068869 The size of the update is too big. The total size of the update must be smaller than GS_MAX_BLOB_SIZE (16 MB), regardless of the total number of blobs. E_GS_USER_CANCELED = 2156068868 The user canceled the download of their save games. E_GS_USER_NOT_REGISTERED_IN_SERVICE = 2156068876 This indicates that the MSA isn't an Xbox services account yet."
+  },
+  "api/Studio23.SS2.SaveSystem.XboxCorePc.Helpers.html": {
+    "href": "api/Studio23.SS2.SaveSystem.XboxCorePc.Helpers.html",
+    "title": "Namespace Studio23.SS2.SaveSystem.XboxCorePc.Helpers | |",
+    "keywords": "Namespace Studio23.SS2.SaveSystem.XboxCorePc.Helpers Enums XSaveErrorCodes"
   },
   "api/XGamingRuntime.EquatableHandle.html": {
     "href": "api/XGamingRuntime.EquatableHandle.html",
@@ -1911,8 +1956,8 @@
   },
   "changelog/CHANGELOG.html": {
     "href": "changelog/CHANGELOG.html",
-    "title": "| |",
-    "keywords": "[0.1.0](2024-01 -09) Feature Update to async function"
+    "title": "Change Log | |",
+    "keywords": "Change Log [0.9.1](2024-01 -31) Feature Tested all the methods to be working Added Proper API Documentations Added Proper Debug logs for error handeling Added a sample scene [0.1.0](2024-01 -09) Feature Update to async function"
   },
   "index.html": {
     "href": "index.html",
