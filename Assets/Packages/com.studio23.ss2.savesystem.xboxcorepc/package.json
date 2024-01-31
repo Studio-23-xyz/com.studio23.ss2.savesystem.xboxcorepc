@@ -1,10 +1,10 @@
 {
   "name": "com.studio23.ss2.savesystem.xboxcorepc",
-  "version": "0.1.1",
+  "version": "0.9.1",
   "displayName": "CloudSave.XboxCorePc",
   "description": "This package is for saving data in xbox core pc",
   "unity": "2022.3",
-  "unityRelease": "14f1",
+  "unityRelease": "10f1",
   "documentationUrl": "https://openupm.com/packages/com.studio23.ss2.cloudsavepc",
   "changelogUrl": "https://openupm.com/packages/com.studio23.ss2.cloudsavepc",
   "licensesUrl": "https://api.github.com/licenses/mit",
@@ -17,9 +17,16 @@
       ]
     }
   ],
+  "samples": [
+    {
+      "displayName": "Functional Example",
+      "description": "A small sample to demonstrate the abilities of the package.",
+      "path": "Samples~/Demo"
+    }
+  ],
   "dependencies": {
-    "com.studio23.ss2.authsystem.xboxcorepc": "0.0.8",
-	"com.studio23.ss2.cloudsave": "0.0.3"
+    "com.studio23.ss2.authsystem.xboxcorepc": "0.9.1",
+    "com.studio23.ss2.cloudsave": "2.0.1"
   },
   "keywords": [
     "xbox ",

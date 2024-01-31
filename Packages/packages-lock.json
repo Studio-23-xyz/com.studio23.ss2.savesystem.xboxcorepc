@@ -1,34 +1,48 @@
 {
   "dependencies": {
     "com.cysharp.unitask": {
-      "version": "2.5.0",
+      "version": "2.5.3",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
       "url": "https://package.openupm.com"
     },
     "com.studio23.ss2.authsystem": {
-      "version": "3.0.0",
-      "depth": 0,
+      "version": "4.0.2",
+      "depth": 1,
       "source": "registry",
-      "dependencies": {},
+      "dependencies": {
+        "com.cysharp.unitask": "2.5.0"
+      },
       "url": "https://package.openupm.com"
     },
     "com.studio23.ss2.authsystem.xboxcorepc": {
-      "version": "0.1.0",
+      "version": "0.9.1",
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.studio23.ss2.authsystem": "2.0.8",
+        "com.studio23.ss2.authsystem": "4.0.2",
         "com.cysharp.unitask": "2.5.0"
       },
       "url": "https://package.openupm.com"
     },
     "com.studio23.ss2.cloudsave": {
-      "version": "1.0.0",
+      "version": "2.0.1",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
+    "com.studio23.ss2.savesystem": {
+      "version": "2.0.3",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.cysharp.unitask": "2.4.1",
+        "com.unity.sharp-zip-lib": "1.3.4-preview",
+        "com.studio23.ss2.cloudsave": "2.0.1"
+      },
       "url": "https://package.openupm.com"
     },
     "com.unity.collab-proxy": {
@@ -91,6 +105,13 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+    "com.unity.nuget.newtonsoft-json": {
+      "version": "3.2.1",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
     "com.unity.performance.profile-analyzer": {
       "version": "1.2.2",
       "depth": 1,
@@ -101,6 +122,13 @@
     "com.unity.settings-manager": {
       "version": "2.0.1",
       "depth": 2,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.sharp-zip-lib": {
+      "version": "1.3.4-preview",
+      "depth": 1,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"

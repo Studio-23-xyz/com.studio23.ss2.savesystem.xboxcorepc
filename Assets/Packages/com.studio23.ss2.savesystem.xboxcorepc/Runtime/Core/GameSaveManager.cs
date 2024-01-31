@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+using Studio23.SS2.SaveSystem.XboxCorePc.Helpers;
 using UnityEngine;
 using UnityEngine.Events;
 using XGamingRuntime;
@@ -11,8 +11,7 @@ namespace GameSave
         private XGameSaveContainerHandle m_GameSaveContainerHandle;
         private XGameSaveUpdateHandle m_GameSaveContainerUpdateHandle;
 
-        public void Initialize(XUserHandle userHandle, string scid, bool syncOnDemand,
-            UnityAction<int> onInitializationComplete)
+        public void Initialize(XUserHandle userHandle, string scid, bool syncOnDemand, UnityAction<int> onInitializationComplete)
         {
             SDK.XGameSaveInitializeProviderAsync(
                 userHandle,
@@ -22,8 +21,7 @@ namespace GameSave
                     OnSaveGameInitialized(hresult, gameSaveProviderHandle, onInitializationComplete));
         }
 
-        private void OnSaveGameInitialized(int hresult, XGameSaveProviderHandle gameSaveProviderHandle,
-            UnityAction<int> onInitializatioComplete)
+        private void OnSaveGameInitialized(int hresult, XGameSaveProviderHandle gameSaveProviderHandle, UnityAction<int> onInitializatioComplete)
         {
             if (HR.FAILED(hresult))
             {
@@ -35,22 +33,16 @@ namespace GameSave
             onInitializatioComplete?.Invoke(hresult);
         }
 
-        public void SaveGame(string displayName, string blobBufferName, byte[] blobData,
-            UnityAction<int> onSaveGameCompleted)
+        public void SaveGame(string displayName, string blobBufferName, byte[] blobData, UnityAction<int> onSaveGameCompleted)
         {
-            SaveGame(displayName, new[] { blobBufferName }, new List<byte[]> { blobData }, onSaveGameCompleted);
-        }
 
-        /// You can save multiple buffers in one go with this method. Can be useful for more complex data
-        public void SaveGame(string displayName, string[] blobBufferNames, List<byte[]> blobDataList,
-            UnityAction<int> onSaveGameCompleted)
-        {
             if (m_GameSaveContainerHandle == null)
             {
                 Debug.LogWarning("You have not created or retrieved a container. Not doing anything.");
                 return;
             }
 
+            //Prepare Container for Update
             var hresult = StartContainerUpdate(displayName);
             if (HR.FAILED(hresult))
             {
@@ -58,17 +50,18 @@ namespace GameSave
                 return;
             }
 
-            for (var i = 0; i < blobBufferNames.Length; i++)
+            //Actually Save data to the container
+            hresult = SubmitDataBlobToWrite(blobBufferName, blobData);
+            if (HR.FAILED(hresult))
             {
-                hresult = SubmitDataBlobToWrite(blobBufferNames[i], blobDataList[i]);
-                if (HR.FAILED(hresult))
-                {
-                    onSaveGameCompleted?.Invoke(hresult);
-                    return;
-                }
+                onSaveGameCompleted?.Invoke(hresult);
+                return;
             }
 
+
             SubmitGameSaveUpdate(onSaveGameCompleted);
+
+
         }
 
         public void GetOrCreateContainer(string containerName, UnityAction<int> onContainerCreated)
@@ -84,7 +77,7 @@ namespace GameSave
                 SDK.XGameSaveCreateContainer(m_GameSaveProviderHandle, containerName, out m_GameSaveContainerHandle);
             if (HR.FAILED(hresult))
             {
-                Debug.LogError($"Error when creating the {containerName} container. HResult: 0x{hresult:x}");
+                Debug.LogError($"Error when creating the {containerName} container. HResult <color=white>0x{hresult:x}</color> <color=yellow>{(XSaveErrorCodes)hresult}</color>");
                 onContainerCreated?.Invoke(hresult);
                 return;
             }
@@ -100,7 +93,7 @@ namespace GameSave
             if (HR.FAILED(hresult))
             {
                 Debug.LogError(
-                    $"Error when creating the {containerDisplayName} update process. HResult: 0x{hresult:x}");
+                    $"Error when creating the {containerDisplayName} update process. HResult <color=white>0x{hresult:x}</color> <color=yellow>{(XSaveErrorCodes)hresult}</color>");
                 return hresult;
             }
 
@@ -119,10 +112,9 @@ namespace GameSave
             var hresult = SDK.XGameSaveSubmitBlobWrite(m_GameSaveContainerUpdateHandle, blobName, data);
             if (HR.FAILED(hresult))
             {
-                Debug.LogError($"Error when submitting the blob {blobName}. HResult: 0x{hresult:x}");
+                Debug.Log($"Error when submitting the blob {blobName}. HResult <color=white>0x{hresult:x}</color> <color=yellow>{(XSaveErrorCodes)hresult}</color>");
                 return hresult;
             }
-
             Debug.Log($"Blob {blobName} submitted.");
             return hresult;
         }
@@ -156,17 +148,6 @@ namespace GameSave
             onSubmitGameSaveComplete?.Invoke(hresult);
         }
 
-        public void LoadGame(string blobBufferName, UnityAction<int, XGameSaveBlob[]> onLoadGameCompleted)
-        {
-            if (m_GameSaveContainerHandle == null)
-            {
-                Debug.LogWarning("You have not created or retrieved a container. Not doing aything.");
-                return;
-            }
-
-            LoadGame(new[] { blobBufferName }, onLoadGameCompleted);
-        }
-
         public void LoadGame(string[] blobBufferNames, UnityAction<int, XGameSaveBlob[]> onLoadGameCompleted)
         {
             if (m_GameSaveContainerHandle == null)
@@ -179,12 +160,11 @@ namespace GameSave
                 blobBufferNames, (hresult, blobs) => OnLoadSaveGameCompleted(hresult, blobs, onLoadGameCompleted));
         }
 
-        private void OnLoadSaveGameCompleted(int hresult, XGameSaveBlob[] blobs,
-            UnityAction<int, XGameSaveBlob[]> onLoadGameCompleted)
+        private void OnLoadSaveGameCompleted(int hresult, XGameSaveBlob[] blobs,UnityAction<int, XGameSaveBlob[]> onLoadGameCompleted)
         {
             if (HR.FAILED(hresult))
             {
-                Debug.LogError($"Error when loading save game. HResult: 0x{hresult:x}");
+                Debug.Log($"Error when loading GameSave. HResult <color=white>0x{hresult:x}</color> <color=yellow>{(XSaveErrorCodes)hresult}</color>");
                 onLoadGameCompleted?.Invoke(hresult, null);
                 return;
             }
@@ -194,6 +174,7 @@ namespace GameSave
 
         public void QuerySpaceQuota(UnityAction<int, long> onSpaceQuotaRequested)
         {
+            
             SDK.XGameSaveGetRemainingQuotaAsync(m_GameSaveProviderHandle,
                 (hresult, remainingQuota) => onSpaceQuotaRequested?.Invoke(hresult, remainingQuota));
         }
@@ -201,7 +182,15 @@ namespace GameSave
         public void DeleteContainer(string containerName, UnityAction<int> onDeleteContainercomplete)
         {
             SDK.XGameSaveDeleteContainerAsync(m_GameSaveProviderHandle, containerName,
-                hresult => onDeleteContainercomplete?.Invoke(hresult));
+                hresult =>
+                {
+                    if (HR.FAILED(hresult))
+                    {
+                        Debug.Log($"Error when deleting Container. HResult <color=white>0x{hresult:x}</color> <color=yellow>{(XSaveErrorCodes)hresult}</color>");
+                    }
+
+                    onDeleteContainercomplete?.Invoke(hresult);
+                });
         }
 
         public void CloseGameSaveHandles()

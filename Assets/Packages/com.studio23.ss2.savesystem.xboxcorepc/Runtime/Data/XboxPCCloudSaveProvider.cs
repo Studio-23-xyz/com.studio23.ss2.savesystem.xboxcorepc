@@ -1,24 +1,27 @@
 using System;
-using System.IO;
+using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
 using GameSave;
 using Studio23.SS2.AuthSystem.XboxCorePC.Core;
-using Studio23.SS2.CloudSave.Core;
+using Studio23.SS2.CloudSave.Data;
 using UnityEngine;
 using UnityEngine.Events;
 using XGamingRuntime;
 
 
-namespace Studio23.SS2.SaveSystem.XboxCorePc.Core
+namespace Studio23.SS2.SaveSystem.XboxCorePc.Data
 {
+    [CreateAssetMenu(fileName = "GameCorePC Cloud Save Provider", menuName = "Studio-23/SaveSystem/Cloud Provider/Game Core PC", order = 2)]
     public class XboxPCCloudSaveProvider : AbstractCloudSaveProvider
     {
         private GameSaveManager _saveManager;
-        private string _filePath;
 
-        
-       
-        
+
+        private void OnEnable()
+        {
+            _platformProvider = PlatformProvider.XBoxPC;
+        }
+
         protected override UniTask<int> Initialize()
         {
           
@@ -42,24 +45,18 @@ namespace Studio23.SS2.SaveSystem.XboxCorePc.Core
             return cloudSaveTaskCompletionSource.Task;
         }
 
-        
-        protected override async UniTask<int> UploadToCloud(string key, byte[] data)
+        protected override async UniTask<int> UploadToCloud(string slotName, string key, byte[] data)
         {
-            var containerName = $"{key}";
-            var blobBufferName = $"{key}_blobBuffer";
+            var containerName = $"{slotName}";
+            var blobBufferName = $"{key}";
 
-            //Enter your display name here
-            var displayName = $"{key}_{DateTime.Now}";
+            var displayName = $"{key}_{DateTime.UtcNow}";
 
 
             Debug.Log($"Saving Container: {containerName}. blob Name: {blobBufferName}");
 
-
-
             UniTaskCompletionSource<int> getOrCreateContainerTaskCompletionSource = new UniTaskCompletionSource<int>();
-
             _saveManager.GetOrCreateContainer(containerName, hresult => getOrCreateContainerTaskCompletionSource.TrySetResult(hresult));
-
             int result = await getOrCreateContainerTaskCompletionSource.Task;
 
             if (HR.FAILED(result))
@@ -69,7 +66,6 @@ namespace Studio23.SS2.SaveSystem.XboxCorePc.Core
 
             UniTaskCompletionSource<int> saveBlobTaskCompletionSource = new UniTaskCompletionSource<int>();
 
-
             _saveManager.SaveGame(displayName,
                 blobBufferName,
                 data,
@@ -77,11 +73,11 @@ namespace Studio23.SS2.SaveSystem.XboxCorePc.Core
 
             return await saveBlobTaskCompletionSource.Task;
         }
-        
-        protected override async UniTask<byte[]> DownloadFromCloud(string key)
+
+        protected override async UniTask<byte[]> DownloadFromCloud(string slotName, string key)
         {
-            var containerName = $"{key}";
-            var blobBufferName = $"{key}_blobBuffer";
+            var containerName = $"{slotName}";
+            var blobBufferName = $"{key}";
 
             Debug.Log($"Loading from  Container: {containerName}. blob Name: {blobBufferName}");
 
@@ -104,8 +100,8 @@ namespace Studio23.SS2.SaveSystem.XboxCorePc.Core
 
                 if (HR.FAILED(result))
                 {
-                    Debug.Log($"Error when loading GameSave. HResult 0x{result:x}");
-                    DownloadBlobtaskCompletionSource.TrySetResult(Array.Empty<byte>());
+
+                    DownloadBlobtaskCompletionSource.TrySetResult(null);
                     return;
                 }
 
@@ -114,16 +110,72 @@ namespace Studio23.SS2.SaveSystem.XboxCorePc.Core
                 DownloadBlobtaskCompletionSource.TrySetResult(loadedData);
             };
 
-            _saveManager.LoadGame(blobBufferName, (result, xgamesaveblob) =>
+            _saveManager.LoadGame(new[] { blobBufferName }, (result, xgamesaveblob) =>
             {
                 onLoadGameCompleted(result, xgamesaveblob);
             });
 
 
             return await DownloadBlobtaskCompletionSource.Task;
+        }
+
+        protected override async UniTask<Dictionary<string, byte[]>> DownloadFromCloud(string slotName, string[] keys)
+        {
+            Dictionary<string, byte[]> savedBytes= new Dictionary<string, byte[]>();
+
+            var containerName = $"{slotName}";
+
+            Debug.Log($"Loading {keys.Length} keys, from  Container: {containerName}.");
 
 
+            UniTaskCompletionSource<int> getOrCreateContainerTaskCompletionSource = new UniTaskCompletionSource<int>();
 
+            _saveManager.GetOrCreateContainer(containerName, hresult => getOrCreateContainerTaskCompletionSource.TrySetResult(hresult));
+
+            int result = await getOrCreateContainerTaskCompletionSource.Task;
+
+            if (HR.FAILED(result))
+            {
+                return null;
+            }
+
+            UniTaskCompletionSource<Dictionary<string, byte[]>> DownloadBlobtaskCompletionSource = new UniTaskCompletionSource<Dictionary<string, byte[]>>();
+
+            UnityAction<int, XGameSaveBlob[]> onLoadGameCompleted = (result, saveBlobs) =>
+            {
+
+                if (HR.FAILED(result))
+                {
+                    DownloadBlobtaskCompletionSource.TrySetResult(savedBytes);
+                    return;
+                }
+
+                for (int i = 0; i < saveBlobs.Length; i++)
+                {
+                    savedBytes[keys[i]] = saveBlobs[i].Data;
+                    Debug.Log($"Loading data buffer successful. Name: {saveBlobs[i].Info.Name} - Size: {saveBlobs[i].Info.Size} bytes");
+                }
+
+                DownloadBlobtaskCompletionSource.TrySetResult(savedBytes);
+            };
+
+            _saveManager.LoadGame(keys, (result, xgamesaveblob) =>
+            {
+                onLoadGameCompleted(result, xgamesaveblob);
+            });
+
+
+            return await DownloadBlobtaskCompletionSource.Task;
+        }
+
+        protected override async UniTask<int> DeleteSlotFromCloud(string slotName)
+        {
+            UniTaskCompletionSource<int> deleteContainerTaskSource = new UniTaskCompletionSource<int>();
+
+            _saveManager.DeleteContainer(slotName, hresult => deleteContainerTaskSource.TrySetResult(hresult));
+
+            return await deleteContainerTaskSource.Task;
+            
         }
     }
 }
