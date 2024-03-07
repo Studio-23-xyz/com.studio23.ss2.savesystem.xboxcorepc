@@ -1,0 +1,23 @@
+{
+    "name": "com.studio23.ss2.savesystem.xboxcorepc",
+    "rootNamespace": "",
+    "references": [
+        "com.studio23.ss2.authsystem",
+        "com.studio23.ss2.authsystem.xboxcorepc",
+        "com.studio23.ss2.cloudsave",
+        "XGamingRuntime",
+        "UniTask"
+    ],
+    "includePlatforms": [
+        "Editor",
+        "WindowsStandalone64"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
