@@ -23,7 +23,7 @@ namespace Studio23.SS2.CloudSave.Editor
             }
 
             // Create the ScriptableObject asset in the resource folder
-            string assetPath = resourceFolderPath + "/GameCorePCCloudProvider.asset";
+            string assetPath = resourceFolderPath + "/CloudSaveProvider.asset";
             AssetDatabase.CreateAsset(providerSettings, assetPath);
             AssetDatabase.SaveAssets();
             AssetDatabase.Refresh();

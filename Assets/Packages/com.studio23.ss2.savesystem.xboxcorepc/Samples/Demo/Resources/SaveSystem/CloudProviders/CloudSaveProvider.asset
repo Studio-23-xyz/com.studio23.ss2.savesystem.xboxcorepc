@@ -10,6 +10,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 539397344678ee1458d187a455388c05, type: 3}
-  m_Name: GameCorePCCloudProvider
+  m_Name: CloudSaveProvider
   m_EditorClassIdentifier: 
-  _platformProvider: 3

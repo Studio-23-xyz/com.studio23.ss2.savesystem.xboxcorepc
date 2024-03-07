@@ -17,10 +17,6 @@ namespace Studio23.SS2.SaveSystem.XboxCorePc.Data
         private GameSaveManager _saveManager;
 
 
-        private void OnEnable()
-        {
-            _platformProvider = PlatformProvider.XBoxPC;
-        }
 
         protected override UniTask<int> Initialize()
         {
